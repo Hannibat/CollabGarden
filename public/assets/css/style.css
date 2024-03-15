@@ -1,3 +1,7 @@
+:root {
+  font-size: 16px;
+}
+
 @font-face {
   font-family: "Montserrat";
   font-weight: 400;
@@ -52,11 +56,6 @@
 }
 
 /* Hero */
-#hero {
-  background-image: url(/public/assets/img/hero.png);
-  background-repeat: no-repeat;
-  height: 60vw;
-}
 
 #hero p {
   font-family: "Inter";
@@ -68,12 +67,83 @@
   padding: 1%;
 }
 
-.btn-hero {
+.bg-image {
+  background-image: url(/public/assets/img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 30vh;
+}
+
+@media (min-width: 576px) {
+  .bg-image {
+    height: 45vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-image {
+    height: 55vh;
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-image {
+    height: 60vh;
+  }
+}
+
+/* Buttons */
+.btn-mobile-home {
+  background-image: linear-gradient(
+    to right top,
+    #8aa59a,
+    #8aaa9d,
+    #8aafa0,
+    #89b4a2,
+    #89b9a5
+  );
+  /* box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.5); */
+  border: none;
+  border-radius: 3px;
+  color: black;
   font-family: "Montserrat";
-  font-weight: bold;
-  background-color: #904133;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.btn-action {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 1rem;
+  background-image: linear-gradient(
+    to right top,
+    #904133,
+    #9c4636,
+    #a84a3a,
+    #b44f3d,
+    #c05441
+  );
   color: white;
   border: none;
   border-radius: 3px;
-  padding: 1% 0.5%;
+  padding: 2% 3%;
+}
+
+.btn-hero {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 1rem;
+  background-image: linear-gradient(
+    to right top,
+    #904133,
+    #9c4636,
+    #a84a3a,
+    #b44f3d,
+    #c05441
+  );
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 1% 3%;
 }
