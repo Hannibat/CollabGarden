@@ -1,49 +1,151 @@
-@font-face {
-    font-family: 'Montserrat';
-    font-weight: 400;
-    src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-Regular.ttf) format('truetype');
+:root {
+  font-size: 16px;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    font-weight: 700;
-    src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-Bold.ttf) format('truetype'); 
+  font-family: "Montserrat";
+  font-weight: 400;
+  src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-Regular.ttf)
+    format("truetype");
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    font-weight: 600;
-    src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-SemiBold.ttf) format('truetype'); 
+  font-family: "Montserrat";
+  font-weight: 700;
+  src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-Bold.ttf)
+    format("truetype");
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    font-weight: 300;
-    src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-Light.ttf) format('truetype'); 
+  font-family: "Montserrat";
+  font-weight: 600;
+  src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-SemiBold.ttf)
+    format("truetype");
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    font-weight: 200;
-    src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-ExtraLight.ttf) format('truetype'); 
+  font-family: "Montserrat";
+  font-weight: 300;
+  src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-Light.ttf)
+    format("truetype");
 }
 
 @font-face {
-    font-family: 'Inter';
-    font-weight: 400;
-    src: url(/public/assets/font/inter/Inter-Regular.ttf) format('truetype'); 
+  font-family: "Montserrat";
+  font-weight: 200;
+  src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-ExtraLight.ttf)
+    format("truetype");
 }
 
 @font-face {
-    font-family: 'Inter';
-    font-weight: 600;
-    src: url(/public/assets/font/inter/Inter-SemiBold.ttf) format('truetype'); 
+  font-family: "Inter";
+  font-weight: 400;
+  src: url(/public/assets/font/inter/Inter-Regular.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: 'Inter';
-    font-weight: 700;
-    src: url(/public/assets/font/inter/Inter-Bold.ttf) format('truetype'); 
+  font-family: "Inter";
+  font-weight: 600;
+  src: url(/public/assets/font/inter/Inter-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 700;
+  src: url(/public/assets/font/inter/Inter-Bold.ttf) format("truetype");
+}
+
+/* Hero */
+
+#hero p {
+  font-family: "Inter";
+  font-size: 0.8em;
+  color: white;
+  width: 45%;
+  text-align: end;
+  background-color: rgba(255, 255, 255, 0.349);
+  padding: 1%;
+}
+
+.bg-image {
+  background-image: url(/public/assets/img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 30vh;
+}
+
+@media (min-width: 576px) {
+  .bg-image {
+    height: 45vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-image {
+    height: 55vh;
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-image {
+    height: 60vh;
+  }
+}
+
+/* Buttons */
+.btn-mobile-home {
+  background-image: linear-gradient(
+    to right top,
+    #8aa59a,
+    #8aaa9d,
+    #8aafa0,
+    #89b4a2,
+    #89b9a5
+  );
+  /* box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.5); */
+  border: none;
+  border-radius: 3px;
+  color: black;
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.btn-action {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 1rem;
+  background-image: linear-gradient(
+    to right top,
+    #904133,
+    #9c4636,
+    #a84a3a,
+    #b44f3d,
+    #c05441
+  );
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 2% 3%;
+}
+
+.btn-hero {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 1rem;
+  background-image: linear-gradient(
+    to right top,
+    #904133,
+    #9c4636,
+    #a84a3a,
+    #b44f3d,
+    #c05441
+  );
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 1% 3%;
 }
 
 ul {
