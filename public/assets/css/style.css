@@ -136,3 +136,7 @@
 }
 
 /* Headings */
+
+ul {
+  list-style: none;
+}
