@@ -45,3 +45,7 @@
     font-weight: 700;
     src: url(/public/assets/font/inter/Inter-Bold.ttf) format('truetype'); 
 }
+
+ul {
+    list-style: none;
+}
