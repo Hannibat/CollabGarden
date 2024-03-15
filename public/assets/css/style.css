@@ -3,7 +3,6 @@
 }
 
 /* Fonts */
-
 @font-face {
   font-family: "Montserrat";
   font-weight: 400;
@@ -63,9 +62,7 @@
   font-weight: 400;
   font-size: 1rem;
   width: 45%;
-  text-align: end;
   /* background-color: rgba(255, 255, 255, 0.498); */
-  padding: 0.8%;
 }
 
 .bg-image {
@@ -88,12 +85,12 @@
   );
   /* box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.5); */
   border: none;
-  border-radius: 3px;
+  border-radius: 4px;
   color: black;
   font-family: "Montserrat";
   font-weight: 300;
   font-size: 1.2rem;
-  width: 25%;
+  width: 30%;
 }
 
 .btn-action {
@@ -112,6 +109,13 @@
   border: none;
   border-radius: 3px;
   padding: 2% 3%;
+  transition: color 150ms ease-in-out;
+}
+
+.btn-action:hover {
+  color: white;
+  background-color: #000000;
+  border: 2px solid black;
 }
 
 #hero button {
@@ -130,17 +134,6 @@
   margin-bottom: 0%;
 }
 
-/* Annonces */
-.icon {
-  width: 25%;
-  padding-right: 4%;
-}
-
-.categories a {
-  color: black;
-  text-decoration: none;
-}
-
 /* Cards */
 .card {
   width: 18rem;
@@ -150,10 +143,6 @@
   font-family: "Inter";
   font-weight: 700;
   font-size: 1rem;
-}
-
-span {
-  font-weight: bold;
 }
 
 .card-img-top {
