@@ -59,12 +59,13 @@
 
 #hero p {
   font-family: "Inter";
+  font-weight: 400;
   font-size: 0.8em;
   color: white;
   width: 45%;
   text-align: end;
-  background-color: rgba(255, 255, 255, 0.349);
-  padding: 1%;
+  /* background-color: rgba(255, 255, 255, 0.498); */
+  padding: 0.8%;
 }
 
 .bg-image {
@@ -130,20 +131,8 @@
   padding: 2% 3%;
 }
 
-.btn-hero {
-  font-family: "Montserrat";
-  font-weight: 600;
-  font-size: 1rem;
-  background-image: linear-gradient(
-    to right top,
-    #904133,
-    #9c4636,
-    #a84a3a,
-    #b44f3d,
-    #c05441
-  );
-  color: white;
-  border: none;
-  border-radius: 3px;
+#hero button {
   padding: 1% 3%;
 }
+
+/* Headings */
