@@ -9,8 +9,8 @@
 </head>
 <body>
     <header>
-
-            <!-- <div class="container d-flex justify-content-between">
+        <nav class="mobile">
+            <div class="container d-flex justify-content-between">
                     <div class="col-6"><img src="./public/assets/img/CollabGarden.svg" class="logo"></div>
                     <div class="col-6"><img src="./public/assets/img/p_profil.png" class="p_profil"></div>
             </div> 
@@ -22,12 +22,48 @@
                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
                     </svg>
                 </span>
-            </div>  -->
+            </div>  
+          </nav>
+
+<!-- Version tablet-->
+            <nav class="tablet navbar navbar-expand bg-body-tertiary justify-content-center">
+                <div class="container-fluid">
+                  <img src="./public/assets/img/logo_desktop.png" class="logo_desktop">
 
 
+               
 
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-            <nav class="navbar navbar-expand bg-body-tertiary justify-content-center">
+                    <div class="input-group searchbar_desktop ms-4">
+                        <input type="text" class="form-control" placeholder="Recherche" aria-label="Recherche" aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                            </svg>
+                        </span>
+                    </div>  
+
+                    <ul class="navbar-nav ms-2 me-2">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Annonces</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Conseils & Jardin</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Evenements</a>
+                      </li>
+                    </ul>
+                    <a href="#" class="btn btn-primary buttonNavbar_desktop ms-auto me-4"><i class="gg-add-r"></i></a>
+                    <img src="./public/assets/img/p_profil.png" class="p_profil_desktop ">
+                  </div>
+
+                </div>
+              </nav>
+
+<!-- Version desktop -->              
+              <nav class="desktop navbar navbar-expand bg-body-tertiary justify-content-center">
                 <div class="container-fluid">
                   <img src="./public/assets/img/logo_desktop.png" class="logo_desktop">
 
@@ -57,13 +93,11 @@
                       </li>
                     </ul>
                     <a href="#" class="btn btn-primary buttonNavbar_desktop ms-auto me-4">Créer une annonce</a>
-                    <a href="#" class="btn btn-primary buttonNavbar_desktop ms-auto me-4"><i class="gg-add-r"></i></a>
                     <img src="./public/assets/img/p_profil.png" class="p_profil_desktop ">
                   </div>
 
                 </div>
               </nav>
-
     </header>
 
     <main>

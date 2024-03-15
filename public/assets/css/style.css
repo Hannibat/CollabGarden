@@ -124,3 +124,31 @@
     font-weight: 700;
     src: url(/public/assets/font/inter/Inter-Bold.ttf) format('truetype'); 
 }
+
+@media (max-width: 707px) {
+    .tablet {
+        display: none;
+    }
+    .desktop {
+        display: none;
+    }
+}
+@media (min-width: 708px) {
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        display: none;
+    }
+}
+  @media (min-width: 884px) {
+    .mobile {
+        display: none;
+      }
+      .tablet {
+        display: none;
+    }
+    .desktop {
+        display: flex;
+    }
+}
