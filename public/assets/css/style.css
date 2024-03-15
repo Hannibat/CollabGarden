@@ -1,3 +1,82 @@
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/add-r.css');
+
+.container {
+    width: 100vw;
+    
+}
+.header {
+    height: 10vh;
+}
+
+.logo {
+    width: 100%;
+    margin-top: 20%;
+}
+
+.logo_desktop {
+    max-width: 7vw;
+    margin-right: 0px;
+
+}
+.p_profil {
+    width: 25%;
+    border-radius: 200px;
+    margin-top: 13%;
+    float: right;
+    margin-right: 5%;
+
+}
+.button_create_desktop {
+    width: 3vw;
+}
+.p_profil_desktop {
+    width: 5%;
+    border-radius: 200px;
+}
+
+.searchbar_desktop {
+    width: 20vw;   
+}
+
+
+.buttonNavbar_desktop {
+    background-color: #904133!important;
+}
+
+
+/* Bouton add annonce tablet */
+.gg-add-r {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 22px;
+    height: 22px;
+    border: 2px solid;
+    transform: scale(var(--ggs,1));
+    border-radius: 4px
+ }
+ .gg-add-r::after,
+ .gg-add-r::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+    border-radius: 5px;
+    top: 8px;
+    left: 4px
+ }
+ .gg-add-r::after {
+    width: 2px;
+    height: 10px;
+    top: 4px;
+    left: 8px
+ }
+
+
+
 :root {
   font-size: 16px;
 }
@@ -218,4 +297,32 @@ span {
   .btn-action {
     font-size: 1.2rem;
   }
+}
+
+@media (max-width: 707px) {
+    .tablet {
+        display: none;
+    }
+    .desktop {
+        display: none;
+    }
+}
+@media (min-width: 708px) {
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        display: none;
+    }
+}
+  @media (min-width: 884px) {
+    .mobile {
+        display: none;
+      }
+      .tablet {
+        display: none;
+    }
+    .desktop {
+        display: flex;
+    }
 }
