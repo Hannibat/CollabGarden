@@ -2,6 +2,8 @@
   font-size: 16px;
 }
 
+/* Fonts */
+
 @font-face {
   font-family: "Montserrat";
   font-weight: 400;
@@ -56,12 +58,10 @@
 }
 
 /* Hero */
-
 #hero p {
   font-family: "Inter";
   font-weight: 400;
-  font-size: 0.8em;
-  color: white;
+  font-size: 1rem;
   width: 45%;
   text-align: end;
   /* background-color: rgba(255, 255, 255, 0.498); */
@@ -74,24 +74,6 @@
   background-size: cover;
   background-position: center center;
   height: 30vh;
-}
-
-@media (min-width: 576px) {
-  .bg-image {
-    height: 45vh;
-  }
-}
-
-@media (min-width: 768px) {
-  .bg-image {
-    height: 55vh;
-  }
-}
-
-@media (min-width: 992px) {
-  .bg-image {
-    height: 60vh;
-  }
 }
 
 /* Buttons */
@@ -111,6 +93,7 @@
   font-family: "Montserrat";
   font-weight: 300;
   font-size: 1.2rem;
+  width: 25%;
 }
 
 .btn-action {
@@ -136,7 +119,103 @@
 }
 
 /* Headings */
+.categories h2 {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 0%;
+}
 
-ul {
+.categories h5 {
+  margin-bottom: 0%;
+}
+
+/* Annonces */
+.icon {
+  width: 25%;
+  padding-right: 4%;
+}
+
+.categories a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Cards */
+.card {
+  width: 18rem;
+}
+
+.card-title {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+span {
+  font-weight: bold;
+}
+
+.card-img-top {
+  height: 55%;
+}
+
+/* Navbars */
+.navbar-mobile p {
+  font-family: "Montserrat";
+  font-size: 0.9em;
+  margin-bottom: 2%;
+}
+
+.navbar-mobile ul {
   list-style: none;
+}
+
+/* Media queries */
+@media ((min-width: 576px) and (orientation: portrait)) {
+  .bg-image {
+    height: 45vh;
+  }
+}
+
+@media ((min-width: 576px) and (orientation: landscape)) {
+  .bg-image {
+    height: 50vh;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    font-size: 20px;
+  }
+  .bg-image {
+    height: 55vh;
+  }
+  #hero p {
+    font-size: 1rem;
+    width: 30%;
+  }
+}
+
+@media (min-width: 992px) {
+  :root {
+    font-size: 25px;
+  }
+
+  .bg-image {
+    height: 60vh;
+  }
+
+  .categories {
+    margin-top: 5%;
+  }
+
+  #hero p {
+    font-size: 1rem;
+    width: 30%;
+  }
+
+  .btn-action {
+    font-size: 1.2rem;
+  }
 }
