@@ -27,14 +27,15 @@
                 <div class="container fluid">
                 <h1>Créer une Annonce</h1>
                 <form method="POST" enctype="multipart/form-data">
-                    <div class="container row d-flex">
-                    <div class="col-7">
+                    <div class="container row d-flex nowrap">
+                    <div class="col-6">
                         <label for="title">Titre de l'annonce(*)</label><br>
-                        <input type="text" id="title" name="title" required><br>
+                        <input type="text" id="title" name="title" placeholder="Graines de chia" required><br>
                     </div>
-                    <div class="col-3">
+                    <div class="col-5">
                         <label for="category">Catégorie(*)</label><br>
                         <select id="category" name="category" required>
+                            <option value="">--Choisir une catégorie--</option>
                             <option value="seeds">Graines</option>
                             <option value="plants">Plantes</option>
                             <option value="trees">Arbres</option>
@@ -44,25 +45,25 @@
                     <div class="container row d-flex">
                     <div class="col-7">
                         <label for="description">Descriptif de l'annonce(*)</label><br>
-                        <textarea id="description" name="description" rows="4" cols="50" required></textarea><br>
+                        <textarea id="description" name="description" rows="4" cols="50" placeholder="Disponibilité, environ 5 kg" required></textarea><br>
                     </div>
-                    <div class="container row d-flex">
-                    <div class="col-3">
+                    <div class="col-5">
                         <label for="postalCode">Code Postal(*)</label><br>
-                        <input type="text" id="postalCode" name="postalCode" required><br>
+                        <input type="text" id="postalCode" name="postalCode" placeholder="80000" required><br>
                     </div>
-                    <div class="col-3">
+                    <div class="col-5">
                         <label for="phone">Numéro de Téléphone:</label><br>
-                        <input type="tel" id="phone" name="phone" required><br>
+                        <input type="tel" id="phone" name="phone" placeholder="0601020304" required><br>
                     </div>
                     <div>
                         <input type="checkbox" id="autorisationPhone" name="autorisationPhone">
                         <label for="autorisationPhone">Autoriser à me joindre par téléphone depuis l'annonce</label><br>
                     </div>
                     </div>
-                    <h2></h2>
+                    <legend>Le champ (*) est obligatoire</legend>
+                    <h2>Ajouter des photos</h2>
                     <div>
-                        <label for="photos">Ajouter des photos</label><br>
+                        <label for="photos"></label><br>
                         <input type="file" id="photos" name="photos" accept=".jpg,.jpeg,.png" multiple><br>
                     </div>
                     <div>
