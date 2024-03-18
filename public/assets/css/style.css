@@ -1,3 +1,48 @@
+
+@media (max-width: 767px) {
+  .bg-image {
+    height: 45vh;
+  }
+  .footerBg{
+    background-color: #3B0A01;
+    background-repeat: no-repeat;
+    background-position: auto;
+    background-size: 100% 100%;
+    color: #FFFFFF;
+  }
+  .footerBg_desktop{
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .bg-image {
+    height: 55vh;
+  }
+  .footerBg_desktop{
+    background-color: #3B0A01;
+    background-repeat: no-repeat;
+    background-position: auto;
+    background-size: 100% 100%;
+    color: #FFFFFF;
+  }
+  .footerBg{
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .bg-image {
+    height: 60vh;
+  }
+}
+ .icon_socialMedia {
+    width:29px;
+ }
+ .bg_Social {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+ }
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/add-r.css');
 
 .container {
