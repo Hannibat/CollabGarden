@@ -158,6 +158,27 @@
   padding: 1.5%;
 }
 
+/* Announcements, form, filters */
+.form-sort {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  background-color: #8aa59a;
+}
+
+.form-select option {
+  font-size: 0.8rem;
+}
+
+.filters p {
+  font-family: "Inter";
+  font-size: 1rem;
+}
+
+.announcements {
+  font-family: "Inter";
+}
+
 /* Navbars */
 .navbar-mobile p {
   font-family: "Montserrat";
