@@ -13,64 +13,64 @@
 </head>
 
 <body>
-    </head>
-
-    <body>
         <header>
 
         </header>
 
-
-        <main>
-        
-            <body>
-                <div class="container fluid">
-                <h1>Créer une Annonce</h1>
+        <main>            
+                <div class="container-fluid">
+                    <div class="container">
+                        <h1>Créer une Annonce</h1>
                 <form method="POST" enctype="multipart/form-data">
-                    <div class="container row d-flex nowrap">
-                    <div class="col-6">
-                        <label for="title">Titre de l'annonce(*)</label><br>
-                        <input type="text" id="title" name="title" placeholder="Graines de chia" required><br>
+                    <div class="container row d-flex justify-content-center-lg">
+                    <div class="col-6-lg">
+                        <label for="title">Titre de l'annonce(*)</label>
+                        <input type="text" id="title" name="title" placeholder="Graines de chia" required>
                     </div>
-                    <div class="col-5">
-                        <label for="category">Catégorie(*)</label><br>
+                    <div class="col-5-lg">
+                        <label for="category">Catégorie (*)</label>
                         <select id="category" name="category" required>
                             <option value="">--Choisir une catégorie--</option>
                             <option value="seeds">Graines</option>
                             <option value="plants">Plantes</option>
                             <option value="trees">Arbres</option>
-                        </select><br>
+                        </select>
+                    </div>
+                    <div class="col-6-lg">
+                        <label for="description">Descriptif de l'annonce (*)</label>
+                        <div>
+                        <textarea id="description" name="description" rows="4" cols="40" placeholder="Disponibilité, environ 5 kg" required></textarea>
                     </div>
                     </div>
                     <div class="container row d-flex">
-                    <div class="col-7">
-                        <label for="description">Descriptif de l'annonce(*)</label><br>
-                        <textarea id="description" name="description" rows="4" cols="50" placeholder="Disponibilité, environ 5 kg" required></textarea><br>
+                        <div class="col-3-lg">
+                            <label for="phone">Numéro de Téléphone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="0601020304">
+                        </div>
+                    <div class="col-3-lg">
+                        <label for="postalCode">Code Postal (*)</label>
+                        <input type="text" id="postalCode" name="postalCode" placeholder="80000" required>
                     </div>
-                    <div class="col-5">
-                        <label for="postalCode">Code Postal(*)</label><br>
-                        <input type="text" id="postalCode" name="postalCode" placeholder="80000" required><br>
+                    <div class="col-3-lg">
+                        <label for="city">Ville (*)</label>
+                        <input type="text" id="city" name="city" placeholder="Amiens" required>
                     </div>
-                    <div class="col-5">
-                        <label for="phone">Numéro de Téléphone:</label><br>
-                        <input type="tel" id="phone" name="phone" placeholder="0601020304" required><br>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="autorisationPhone" name="autorisationPhone">
-                        <label for="autorisationPhone">Autoriser à me joindre par téléphone depuis l'annonce</label><br>
-                    </div>
+                    <div class="container d-flex">
+                        <input class="me-3" type="checkbox" id="autorisationPhone" name="autorisationPhone">
+                        <label for="autorisationPhone">Autoriser à me joindre par téléphone depuis l'annonce</label>
                     </div>
                     <legend>Le champ (*) est obligatoire</legend>
                     <h2>Ajouter des photos</h2>
                     <div>
-                        <label for="photos"></label><br>
-                        <input type="file" id="photos" name="photos" accept=".jpg,.jpeg,.png" multiple><br>
+                        <label for="photos"></label>
+                        <input type="file" id="photos" name="photos" accept=".jpg,.jpeg,.png" multiple>
                     </div>
                     <div>
                         <input type="submit" value="Mettre en ligne">
                     </div>
                 </div>
                 </form>
+            </div>
 
         </main>
 
@@ -81,7 +81,7 @@
 
         </footer>
         <script src="./lib/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
