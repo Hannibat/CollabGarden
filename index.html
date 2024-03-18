@@ -14,48 +14,32 @@
 </head>
 
 <body>
+    <!-- Header -->
     <header>
-      <!-- <div class="container">
-        <div class="row">
-          <div class="col-6">
-            <div class="logo">
-              <img src="./public/assets/img/CollabGarden.png" />
-            </div>
-          </div>
 
-          <div class="col-6">
-            <div class="p_profil">
-              <img src="./public/assets/img/p_profil.png" />
-            </div>
-          </div>
-
-          <div class="col-12">
-            <div class="search_bar"></div>
-          </div>
-        </div>
-      </div> -->
+    <!-- Fin header -->
     </header>
 
     <!-- Main -->
     <main>
       <!-- Hero -->
-      <section id="hero" class="container-fluid bg-image">
+      <section id="hero" class="container-fluid">
         <div class="row">
           <div
-            class="col-12 d-flex flex-column justify-content-center bg-image"
+            class="col-12 d-flex flex-column justify-content-center bg-hero-image"
           >
             <div class="container p-0">
               <div class="row">
                 <!-- Slogan -->
                 <div class="col-12 d-flex justify-content-end">
-                  <p>
+                  <p class="text-white text-end">
                     Échangeons graines, plantes et arbres pour cultiver la
                     diversité ensemble !
                   </p>
                 </div>
                 <!-- Button call to action -->
                 <div class="col-12 d-flex justify-content-end">
-                  <button class="btn-action">Trouver vos plantes</button>
+                  <button class="btn btn-action">Trouver vos plantes</button>
                 </div>
               </div>
             </div>
@@ -66,132 +50,275 @@
       <!-- Groupe de buttons -->
       <section class="container d-lg-none mt-4">
         <div class="d-flex justify-content-between">
-          <button class="btn-mobile-home"><img src="" alt="" />Graines</button>
-          <button class="btn-mobile-home"><img src="" alt="" />Plantes</button>
-          <button class="btn-mobile-home"><img src="" alt="" />Arbres</button>
+          <button class="btn btn-mobile-home d-flex align-items-center justify-content-center py-1"><img src="./public/assets/img/icon-seeds.png" class="w-25 pe-1" alt="" /><p class="m-0">Graines</p></button>
+          <button class="btn btn-mobile-home d-flex align-items-center justify-content-center py-1"><img src="./public/assets/img/icon-plant.png" class="w-25 pe-1" alt=""><p class="m-0">Plantes</p></button>
+          <button class="btn btn-mobile-home d-flex align-items-center justify-content-center py-1"><img src="./public/assets/img/icon-tree.png" class="w-25 pe-1" alt=""><p class="m-0">Arbres</p></button>
         </div>
-        <div class="d-flex justify-content-center mt-3">
-          <button class="btn-action">CRÉER UNE ANNONCE</button>
+        <div class="d-flex justify-content-center mt-3 mb-3">
+          <button class="btn btn-action">CRÉER UNE ANNONCE</button>
         </div>
       </section>
 
       <!-- Annonces -->
       <section class="categories container">
         <!-- Graines -->
-        <div>
-          <div class="d-flex justify-content-between align-items-center">
+        <div class="mb-3">
+          <div class="d-flex justify-content-between align-items-center mb-2">
             <h2>Graines</h2>
-            <a href="#">Tout voir</a>
+            <a href="#" class="d-lg-none text-black text-decoration-none">Tout voir</a>
           </div>
           <div class="d-flex gap-3">
-            <div class="card" style="width: 18rem">
+            <div class="card border-0">
               <img
-                src="./public/assets/img/annonce_1.jpg"
+                src="./public/assets/img/graines/graines_chia.jpg"
                 class="card-img-top"
                 alt="..."
               />
-              <div class="card-body">
-                <div class="d-flex">
+              <div class="card-body px-0">
+                <div class="d-flex align-items-center justify-content-between">
                   <h5 class="card-title">Graines de chia</h5>
-                  <div><i class="fa-regular fa-star"></i>5</div>
+                  <div>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="fw-bold">5</span>
+                  </div>
                 </div>
                 <p class="card-text">Amiens, 80000</p>
               </div>
             </div>
-            <div class="card" style="width: 18rem">
+            <div class="card border-0">
               <img
-                src="./public/assets/img/annonce_1.jpg"
+                src="./public/assets/img/graines/blé.jpg"
                 class="card-img-top"
                 alt="..."
               />
-              <div class="card-body">
-                <div class="d-flex">
-                  <h5 class="card-title">Graines de chia</h5>
-                  <div><i class="fa-regular fa-star"></i>5</div>
+              <div class="card-body px-0">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="card-title">Blé</h5>
+                  <div>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="fw-bold">5</span>
+                  </div>
+                </div>
+                <p class="card-text">Amiens, 80000</p>
+              </div>
+            </div>
+            <div class="card border-0 d-none d-md-block">
+              <img
+                src="./public/assets/img/graines/graines_tournesol.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body px-0">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="card-title">Tournesol</h5>
+                  <div>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="fw-bold">5</span>
+                  </div>
+                </div>
+                <p class="card-text">Amiens, 80000</p>
+              </div>
+            </div>
+            <div class="card border-0 d-none d-xl-block">
+              <img
+                src="./public/assets/img/graines/graines_tournesol.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body px-0">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="card-title">Tournesol</h5>
+                  <div>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="fw-bold">5</span>
+                  </div>
                 </div>
                 <p class="card-text">Amiens, 80000</p>
               </div>
             </div>
           </div>
+          <div class="d-grid gap-2 col-4 mx-auto">
+            <button type="button" class="btn btn-more d-none d-lg-block">Plus</button>
+          </div>
         </div>
+
         <!-- Plantes -->
-        <div>
-          <div class="d-flex justify-content-between align-items-center">
+        <div class="mb-3">
+          <div class="d-flex justify-content-between align-items-center mb-2">
             <h2>Plantes</h2>
-            <a href="#">Tout voir</a>
+            <a href="#" class="d-lg-none text-black text-decoration-none">Tout voir</a>
           </div>
           <div class="d-flex gap-3">
-            <div class="card" style="width: 18rem">
+            <div class="card border-0">
               <img
-                src="./public/assets/img/annonce_1.jpg"
+                src="./public/assets/img/plantes/lotus.jpg"
                 class="card-img-top"
                 alt="..."
               />
-              <div class="card-body">
-                <div class="d-flex">
-                  <h5 class="card-title">Graines de chia</h5>
-                  <div><i class="fa-regular fa-star"></i>5</div>
+              <div class="card-body px-0">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="card-title">Lotus</h5>
+                  <div>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="fw-bold">5</span>
+                  </div>
                 </div>
                 <p class="card-text">Amiens, 80000</p>
               </div>
             </div>
-            <div class="card" style="width: 18rem">
+            <div class="card border-0">
               <img
-                src="./public/assets/img/annonce_1.jpg"
+                src="./public/assets/img/plantes/rose_bicolore.jpg"
                 class="card-img-top"
                 alt="..."
               />
-              <div class="card-body">
-                <div class="d-flex">
-                  <h5 class="card-title">Graines de chia</h5>
-                  <div><i class="fa-regular fa-star"></i>5</div>
+              <div class="card-body px-0">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="card-title">Rose bicolore</h5>
+                  <div>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="fw-bold">5</span>
+                  </div>
                 </div>
                 <p class="card-text">Amiens, 80000</p>
               </div>
             </div>
+            <div class="card d-none d-md-block border-0">
+              <img
+                src="./public/assets/img/plantes/rose_orange.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body px-0">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="card-title">Rose orange</h5>
+                  <div>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="fw-bold">5</span>
+                  </div>
+                </div>
+                <p class="card-text">Amiens, 80000</p>
+              </div>
+            </div>
+            <div class="card d-none d-xl-block border-0">
+              <img
+                src="./public/assets/img/plantes/rose_orange.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body px-0">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="card-title">Rose orange</h5>
+                  <div>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="fw-bold">5</span>
+                  </div>
+                </div>
+                <p class="card-text">Amiens, 80000</p>
+              </div>
+            </div>
+          </div>
+          <div class="d-grid gap-2 col-4 mx-auto">
+            <button type="button" class="btn btn-more d-none d-lg-block">Plus</button>
           </div>
         </div>
+
         <!-- Arbres -->
-        <div>
-          <div class="d-flex justify-content-between align-items-center">
-            <h2>Graines</h2>
-            <a href="#">Tout voir</a>
+        <div class="mb-3">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <h2>Arbres</h2>
+            <a href="#" class="d-lg-none text-black text-decoration-none">Tout voir</a>
           </div>
           <div class="d-flex gap-3">
-            <div class="card" style="width: 18rem">
+            <div class="card border-0">
               <img
-                src="./public/assets/img/annonce_1.jpg"
+                src="./public/assets/img/arbres/bonsai.jpg"
                 class="card-img-top"
                 alt="..."
               />
-              <div class="card-body">
-                <div class="d-flex">
-                  <h5 class="card-title">Graines de chia</h5>
-                  <div><i class="fa-regular fa-star"></i>5</div>
+              <div class="card-body px-0">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="card-title">Bonsai</h5>
+                  <div>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="fw-bold">5</span>
+                  </div>
                 </div>
                 <p class="card-text">Amiens, 80000</p>
               </div>
             </div>
-            <div class="card" style="width: 18rem">
+            <div class="card border-0">
               <img
-                src="./public/assets/img/annonce_1.jpg"
+                src="./public/assets/img/arbres/oranger.jpg"
                 class="card-img-top"
                 alt="..."
               />
-              <div class="card-body">
-                <div class="d-flex">
-                  <h5 class="card-title">Graines de chia</h5>
-                  <div><i class="fa-regular fa-star"></i>5</div>
+              <div class="card-body px-0">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="card-title">Oranger</h5>
+                  <div>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="fw-bold">5</span>
+                  </div>
                 </div>
                 <p class="card-text">Amiens, 80000</p>
               </div>
             </div>
+            <div class="card d-none d-md-block border-0">
+              <img
+                src="./public/assets/img/arbres/pommier.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body px-0">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="card-title">Pommier</h5>
+                  <div>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="fw-bold">5</span>
+                  </div>
+                </div>
+                <p class="card-text">Amiens, 80000</p>
+              </div>
+            </div>
+            <div class="card d-none d-xl-block border-0">
+              <img
+                src="./public/assets/img/arbres/pommier.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body px-0">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="card-title">Pommier</h5>
+                  <div>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="fw-bold">5</span>
+                  </div>
+                </div>
+                <p class="card-text">Amiens, 80000</p>
+              </div>
+            </div>
+          </div>
+          <div class="d-grid gap-2 col-4 mx-auto">
+            <button type="button" class="btn btn-more d-none d-lg-block">Plus</button>
           </div>
         </div>
       </section>
-      <!-- Fin main -->
 
-        <nav class="navbar sticky-bottom rounded-5 p-0 mb-10 mx-5 border border-5 ">
+      <!-- Evenements -->
+      <section id="events" class="container d-none d-lg-block">
+        <div class="row mt-4 bg-event-image">
+          <div class="col-12 pt-4">
+            <p>Les évènements près de chez vous</p>
+          </div>
+          <div class="col-12 pb-4 d-flex justify-content-end align-items-end">
+            <button type="button" class="btn btn-light border-0 btn-more">Voir tous les évènements</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Navbar mobile -->
+      <nav class="navbar navbar-mobile d-lg-none bg-white sticky-bottom rounded-4 p-0 mb-10 mx-3 border border-secondary-subtle">
             <div class="container justify-content-center">
                 <ul class="list d-flex flex-nowrap p-0 m-0 ">
                     <li class="navbar-brand d-flex flex-row mx-2" href="#">
@@ -220,8 +347,9 @@
                     </li>
                 </ul>
             </div>
-        </nav>
-        
+      </nav>
+
+    <!-- Fin main -->
     </main>
 
     <footer></footer>
@@ -230,11 +358,7 @@
       src="https://kit.fontawesome.com/b4f9175766.js"
       crossorigin="anonymous"
     ></script>
-    <footer>
-        
-    </footer>
     <script src="./lib/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
-  </body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
