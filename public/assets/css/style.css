@@ -114,6 +114,12 @@
 }
 
 /* Headings */
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
 .categories h2 {
   font-family: "Inter";
   font-weight: 700;
@@ -159,7 +165,8 @@
 }
 
 /* Announcements, form, filters */
-.form-sort {
+.form-sort,
+.form-select {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 1rem;
@@ -175,8 +182,13 @@
   font-size: 1rem;
 }
 
-.announcements {
+#announcements p {
   font-family: "Inter";
+  font-size: 0.8rem;
+}
+
+.announcement-image {
+  width: 25%;
 }
 
 /* Navbars */
@@ -217,6 +229,10 @@
     font-size: 1rem;
     width: 30%;
   }
+
+  .announcement-image {
+    width: 20%;
+  }
 }
 
 @media ((min-width: 992px) and (orientation: portrait)) {
@@ -240,6 +256,10 @@
 
   #hero p {
     font-size: 1rem;
+    width: 30%;
+  }
+
+  .announcement-image {
     width: 30%;
   }
 }

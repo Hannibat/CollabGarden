@@ -21,7 +21,7 @@
   <body>
     <header></header>
     <main>
-      <h1 class="d-none d-lg-block">Annonces</h1>
+      <h1 class="container d-none d-lg-block mt-4">Annonces</h1>
       <div class="d-lg-none d-flex justify-content-center my-3">
         <button class="btn btn-action">CRÉER UNE ANNONCE</button>
       </div>
@@ -67,7 +67,7 @@
                   aria-label="Close"
                 ></button>
               </div>
-              <div class="offcanvas-body">
+              <div class="offcanvas-body d-flex flex-column">
                 <!-- Départements -->
                 <select
                   class="form-select form-select-sm w-auto"
@@ -81,7 +81,7 @@
                 </select>
                 <!-- Categories -->
                 <select
-                  class="form-select form-select-sm w-auto"
+                  class="form-select form-select-sm w-auto mt-3"
                   aria-label="Small select example"
                 >
                   <option selected>Catégories</option>
@@ -89,7 +89,12 @@
                   <option value="2">Graines</option>
                   <option value="3">Arbres</option>
                 </select>
+                <div class="d-flex justify-content-between">
+                  <button type="submit" class="btn btn-action">Afficher</button>
+                  <button type="button" class="btn btn-action">Effacer</button>
+                </div>
               </div>
+              !
             </div>
           </div>
         </form>
@@ -98,49 +103,115 @@
           <p>4 annonce(s) correspondant à votre recherche:</p>
         </div>
       </div>
+      <!-- Annonces -->
       <div id="announcements" class="container">
-        <div class="row">
-          <div class="col-12 d-flex gap-3 bg-secondary-subtle py-2 rounded-2">
+        <div class="row gy-3">
+          <div class="col-12 col-lg-6 d-flex gap-3 py-2 rounded-2">
             <img
-              src="./public/assets/img/plantes/lilas.jpg"
+              src="./public/assets/img/plantes/lily.jpg"
               alt=""
-              class="w-25 rounded-2"
+              class="announcement-image rounded-2"
             />
-            <div>
-              <h5>
-                <a class="text-black text-decoration-none" href="#"
-                  >Lis blancs</a
-                >
-              </h5>
+            <div class="w-100 d-flex flex-column justify-content-between">
+              <div class="d-flex justify-content-between">
+                <h5>
+                  <a class="text-black text-decoration-none" href="#"
+                    >Lis blancs</a
+                  >
+                </h5>
+                <i class="bi bi-heart"></i>
+              </div>
               <p class="text-secondary">
                 Jeune pousse, mesure environs 60cm. Parfumée.
               </p>
-              <div class="d-flex justify-content-end align-items-center">
-                <i class="fa-regular fa-star"></i>
-                <span class="ms-1 fw-bold">5</span>
+              <div class="d-flex justify-content-between align-items-center">
+                <div><p class="m-0">Amiens, 80000</p></div>
+                <div>
+                  <i class="fa-regular fa-star"></i>
+                  <span class="ms-1 fw-bold">5</span>
+                </div>
               </div>
             </div>
           </div>
-          <div
-            class="container d-flex gap-3 bg-secondary-subtle py-2 rounded-2"
-          >
+          <div class="col-12 col-lg-6 d-flex gap-3 py-2 rounded-2">
             <img
               src="./public/assets/img/plantes/lilas.jpg"
               alt=""
-              class="w-25 rounded-2"
+              class="rounded-2 announcement-image"
             />
-            <div>
-              <h5>
-                <a class="text-black text-decoration-none" href="#"
-                  >Lis blancs</a
-                >
-              </h5>
+            <div class="w-100 d-flex flex-column justify-content-between">
+              <div class="d-flex justify-content-between">
+                <h5>
+                  <a class="text-black text-decoration-none" href="#"
+                    >Lilas purple</a
+                  >
+                </h5>
+                <i class="bi bi-heart"></i>
+              </div>
               <p class="text-secondary">
-                Jeune pousse, mesure environs 60cm. Parfumée.
+                Plusieurs pousses de disponible. J'ai également d'autres
+                couleurs...
               </p>
-              <div class="d-flex justify-content-end align-items-center">
-                <i class="fa-regular fa-star"></i>
-                <span class="ms-1 fw-bold">5</span>
+              <div class="d-flex justify-content-between align-items-center">
+                <div><p class="m-0">Amiens, 80000</p></div>
+                <div>
+                  <i class="fa-regular fa-star"></i>
+                  <span class="ms-1 fw-bold">5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 d-flex gap-3 py-2 rounded-2">
+            <img
+              src="./public/assets/img/plantes/tomato.jpg"
+              alt=""
+              class="announcement-image rounded-2"
+            />
+            <div class="w-100 d-flex flex-column justify-content-between">
+              <div class="d-flex justify-content-between">
+                <h5>
+                  <a class="text-black text-decoration-none" href="#"
+                    >Semis tomates</a
+                  >
+                </h5>
+                <i class="bi bi-heart"></i>
+              </div>
+              <p class="text-secondary">
+                Plusieurs de disponible. N’hésitez pas à me contacter!
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div><p class="m-0">Amiens, 80000</p></div>
+                <div>
+                  <i class="fa-regular fa-star"></i>
+                  <span class="ms-1 fw-bold">4</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 d-flex gap-3 py-2 rounded-2">
+            <img
+              src="./public/assets/img/graines/seeds.jpg"
+              alt=""
+              class="announcement-image rounded-2"
+            />
+            <div class="w-100 d-flex flex-column justify-content-between">
+              <div class="d-flex justify-content-between">
+                <h5>
+                  <a class="text-black text-decoration-none" href="#"
+                    >Graines en vrac</a
+                  >
+                </h5>
+                <i class="bi bi-heart"></i>
+              </div>
+              <p class="text-secondary">
+                Quantité importante. Contactez moi pour plus d’informations.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div><p class="m-0">Amiens, 80000</p></div>
+                <div>
+                  <i class="fa-regular fa-star"></i>
+                  <span class="ms-1 fw-bold">4</span>
+                </div>
               </div>
             </div>
           </div>
