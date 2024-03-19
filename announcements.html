@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./lib/bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/bootstrap-icons.svg" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="./public/assets/css/style.css" />
+    <title>CollabGarden announcements</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="mobile d-md-none mb-3">
+            <div class="container d-flex justify-content-between">
+                <div class="col-6"><img src="./public/assets/img/CollabGarden.svg" alt="logo collabgarden" class="logo">
+                </div>
+                <div class="col-6"><img src="./public/assets/img/profil/granny.png" alt="photo de profil"
+                        class="p_profil"></div>
+            </div>
+        </nav>
+
+        <!-- Version tablet-->
+        <nav class="tablet navbar navbar-expand justify-content-center d-none d-md-block d-lg-none">
+            <div class="container-fluid">
+                <img src="./public/assets/img/logo_desktop.png" alt="photo de profil" class="logo_desktop">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="input-group searchbar_desktop ms-4">
+                        <input type="text" class="form-control" placeholder="Recherche" aria-label="Recherche">
+                        <span class="input-group-text" id="basic-addon2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                            </svg>
+                        </span>
+                    </div>
+
+                    <ul class="navbar-nav ms-2 me-2">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page">Annonces</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Conseils & Jardin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Évènements</a>
+                        </li>
+                    </ul>
+                    <a class="btn btn-action ms-auto me-4"><i class="gg-add-r"></i></a>
+                    <img src="./public/assets/img/profil/granny.png" alt="photo de profil" class="p_profil_desktop ">
+                </div>
+            </div>
+        </nav>
+
+        <!-- Version desktop -->
+        <nav class="desktop navbar navbar-expand d-flex justify-content-center d-none d-lg-block">
+            <div class="container-fluid">
+                <img src="./public/assets/img/logo_desktop.png" alt="logo collabgarden" class="logo_desktop">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="input-group searchbar_desktop ms-4">
+                        <input type="text" class="form-control" placeholder="Recherche" aria-label="Recherche"
+                            aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                            </svg>
+                        </span>
+                    </div>
+
+                    <ul class="navbar-nav ms-5 me-2">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Annonces</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Conseils & Jardin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Évènements</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-action ms-auto me-4">Créer une annonce</a>
+                    <img src="./public/assets/img/profil/granny.png" alt="photo de profil d'une personne agée"
+                        class="p_profil_desktop ">
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <h1 class="container d-none d-lg-block mt-4">Annonces</h1>
+        <div class="d-lg-none d-flex justify-content-center my-3">
+            <button class="btn btn-action">CRÉER UNE ANNONCE</button>
+        </div>
+        <!-- Form -->
+        <div class="container filters">
+            <form action="">
+                <div class="d-flex justify-content-between">
+                    <select class="form-select filter-sort form-select-sm w-auto" aria-label="Small select example">
+                        <option selected>Trier par</option>
+                        <option value="1">Plus récents</option>
+                        <option value="2">Plus anciennes</option>
+                        <option value="3">Mieux noté</option>
+                    </select>
+
+                    <!-- Filtres Offcanva -->
+                    <button class="btn btn-action btn-filter" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                        Filtres
+                        <i class="bi bi-funnel"></i>
+                    </button>
+
+                    <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+                        aria-labelledby="staticBackdropLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="staticBackdropLabel">
+                                Filtres
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body d-flex flex-column justify-content-between">
+                            <!-- Départements -->
+                            <div>
+                                <div>
+                                    <p class="m-0">Départements</p>
+                                    <select class="filter-departements form-select form-select-sm w-auto"
+                                        aria-label="Small select example">
+                                        <option selected>Tous les départements</option>
+                                        <option value="1">Ain</option>
+                                        <option value="2">Aisne</option>
+                                        <option value="3">Allier</option>
+                                        <option value="4">Alpes de Haute-Provence</option>
+                                    </select>
+                                </div>
+                                <!-- Categories -->
+                                <div class="filter-categories mt-2">
+                                    <p class="m-0">Catégories</p>
+                                    <div>
+                                        <input type="checkbox" id="allCategories" name="allCategories" checked />
+                                        <label for="allCategories">Toutes les catégories</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="plants" name="plants" />
+                                        <label for="plants">Plantes</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="seeds" name="seeds" />
+                                        <label for="seeds">Graines</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="trees" name="trees" />
+                                        <label for="trees">Arbres</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Boutons filtres offcanva-->
+                            <div class="d-flex justify-content-between">
+                                <button type="submit" class="btn btn-action btn-filter">
+                                    Afficher
+                                </button>
+                                <button type="button" class="btn btn-action btn-filter">
+                                    Effacer
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <!-- Message de résultat de recherche -->
+            <div class="mt-2">
+                <p>4 annonce(s) correspondant à votre recherche:</p>
+            </div>
+        </div>
+        <!-- Annonces -->
+        <div id="announcements" class="container">
+            <div class="row gy-3">
+                <div class="col-12 col-lg-6 d-flex gap-3 py-2 rounded-2">
+                    <img src="./public/assets/img/plantes/lily.jpg" alt="" class="announcement-image rounded-2" />
+                    <div class="w-100 d-flex flex-column justify-content-between">
+                        <div class="d-flex justify-content-between">
+                            <h5>
+                                <a class="text-black text-decoration-none" href="#">Lys blancs</a>
+                            </h5>
+                            <a href="" class="text-black"><i class="bi bi-heart"></i></a>
+                        </div>
+                        <p class="text-secondary">
+                            Jeune pousse, mesure environs 60cm. Parfumée.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <p class="m-0">Amiens, 80000</p>
+                            </div>
+                            <div class="announcement-rate">
+                                <i class="fa-regular fa-star"></i>
+                                <span class="fw-bold">5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 d-flex gap-3 py-2 rounded-2">
+                    <img src="./public/assets/img/plantes/lilas.jpg" alt="" class="rounded-2 announcement-image" />
+                    <div class="w-100 d-flex flex-column justify-content-between">
+                        <div class="d-flex justify-content-between">
+                            <h5>
+                                <a class="text-black text-decoration-none" href="#">Lilas purple</a>
+                            </h5>
+                            <a href="" class="text-black"><i class="bi bi-heart"></i></a>
+                        </div>
+                        <p class="text-secondary">
+                            Plusieurs pousses de disponible. J'ai également d'autres
+                            couleurs...
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <p class="m-0">Amiens, 80000</p>
+                            </div>
+                            <div class="announcement-rate">
+                                <i class="fa-regular fa-star"></i>
+                                <span class="fw-bold">5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 d-flex gap-3 py-2 rounded-2">
+                    <img src="./public/assets/img/plantes/tomato.jpg" alt="" class="announcement-image rounded-2" />
+                    <div class="w-100 d-flex flex-column justify-content-between">
+                        <div class="d-flex justify-content-between">
+                            <h5>
+                                <a class="text-black text-decoration-none" href="#">Semis tomates</a>
+                            </h5>
+                            <a href="" class="text-black"><i class="bi bi-heart"></i></a>
+                        </div>
+                        <p class="text-secondary">
+                            Plusieurs de disponible. N’hésitez pas à me contacter!
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <p class="m-0">Amiens, 80000</p>
+                            </div>
+                            <div class="announcement-rate">
+                                <i class="fa-regular fa-star"></i>
+                                <span class="fw-bold">4</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 d-flex gap-3 py-2 rounded-2">
+                    <img src="./public/assets/img/graines/seeds.jpg" alt="" class="announcement-image rounded-2" />
+                    <div class="w-100 d-flex flex-column justify-content-between">
+                        <div class="d-flex justify-content-between">
+                            <h5>
+                                <a class="text-black text-decoration-none" href="#">Graines en vrac</a>
+                            </h5>
+                            <a href="" class="text-black"><i class="bi bi-heart"></i></a>
+                        </div>
+                        <p class="text-secondary">
+                            Quantité importante. Contactez moi pour plus d’informations.
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <p class="m-0">Amiens, 80000</p>
+                            </div>
+                            <div class="announcement-rate">
+                                <i class="fa-regular fa-star"></i>
+                                <span class="fw-bold">4</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav
+            class="navbar navbar-mobile d-md-none bg-white sticky-bottom rounded-4 p-0 mb-10 mx-3 border border-secondary-subtle">
+            <div class="container justify-content-center">
+                <ul class="list d-flex flex-nowrap p-0 m-0 ">
+                    <li class="navbar-brand d-flex flex-row mx-2">
+                        <div class="flex-row text-center p-0">
+                            <i class="bi bi-house fs-1"></i>
+                            <p>Accueil</p>
+                        </div>
+                    </li>
+                    <li class="navbar-brand d-flex flex-nowrap mx-1">
+                        <div class="flex-row text-center p-0">
+                            <i class="bi bi-card-list fs-1"></i>
+                            <p>Annonces</p>
+                        </div>
+                    </li>
+                    <li class="navbar-brand d-flex flex-nowrap mx-1">
+                        <div class="text-center p-0">
+                            <i class="bi bi-lightbulb fs-1"></i>
+                            <p>Conseils</p>
+                        </div>
+                    </li>
+                    <li class="navbar-brand d-flex flex-nowrap mx-2">
+                        <div class="text-center p-0">
+                            <i class="bi bi-megaphone fs-1"></i>
+                            <p>Sorties</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </main>
+    <footer>
+
+        <div class="container-fluid footerBg">
+            <div class="row text-center">
+                <div class="col-12">
+                    <div class="socialMedia">
+                        <img src="./public/assets/img/socialmedia/socialinsta.png" alt="logo instagram"
+                            class="icon_socialMedia bg_Social">
+                        <img src="./public/assets/img/socialmedia/socialfb.png" alt="logo facebook"
+                            class="icon_socialMedia bg_Social">
+                        <img src="./public/assets/img/socialmedia/x.png" alt="logo x"
+                            class="icon_socialMedia bg_Social">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div>Contact</div>
+                </div>
+
+                <div class="col-4">
+                    <div>Mentions légales</div>
+                </div>
+
+                <div class="col-4">
+                    <div>Politique de confidentialité</div>
+                </div>
+
+                <div class="col-12 mt-3">
+                    <div>Source photos: Pixabay & Unsplash</div>
+                    <div>© CollabGarden</div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid footerBg_desktop">
+            <div class="row text-center">
+                <div class="col-4 mt-2">
+                    <p>Contactez nous:</p>
+                    <div>Téléphone: 0621222324</div>
+                    <div>Email: collabgarden@gmail.com</div>
+                    <hr>
+                    <p>Mentions légales</p>
+                </div>
+                <div class="col-4">
+                    <div class="socialMedia">
+                        <img src="./public/assets/img/socialmedia/socialinsta.png" alt="logo instagram"
+                            class="icon_socialMedia bg_Social">
+                        <img src="./public/assets/img/socialmedia/socialfb.png" alt="logo facebook"
+                            class="icon_socialMedia bg_Social">
+                        <img src="./public/assets/img/socialmedia/x.png" alt="logo x"
+                            class="icon_socialMedia bg_Social">
+                    </div>
+                </div>
+                <div class="col-4 mt-4">
+                    <div>ANNONCES</div>
+                    <div>CONSEILS & JARDIN</div>
+                    <div>EVENEMENTS</div>
+                    <hr>
+                    <p>Politique de confidentialité</p>
+                </div>
+
+                <div class="col-12">
+                    <div>© CollabGarden</div>
+                    <div>Source photos: Pixabay & Unsplash</div>
+                </div>
+
+            </div>
+        </div>
+
+        
+    </footer>
+    <script src="https://kit.fontawesome.com/b4f9175766.js" crossorigin="anonymous"></script>
+    <script src="./lib/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
