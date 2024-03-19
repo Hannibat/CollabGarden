@@ -19,12 +19,16 @@
     <title>CollabGarden</title>
   </head>
   <body>
+    <!-- Header -->
     <header></header>
+
+    <!-- Main -->
     <main>
       <h1 class="container d-none d-lg-block mt-4">Annonces</h1>
       <div class="d-lg-none d-flex justify-content-center my-3">
         <button class="btn btn-action">CRÉER UNE ANNONCE</button>
       </div>
+      <!-- Form -->
       <div class="container filters">
         <form action="">
           <div class="d-flex justify-content-between">
@@ -39,7 +43,7 @@
             </select>
             <!-- Filtres -->
             <button
-              class="btn btn-action"
+              class="btn btn-action btn-filter"
               type="button"
               data-bs-toggle="offcanvas"
               data-bs-target="#staticBackdrop"
@@ -67,34 +71,65 @@
                   aria-label="Close"
                 ></button>
               </div>
-              <div class="offcanvas-body d-flex flex-column">
+              <div
+                class="offcanvas-body d-flex flex-column justify-content-between"
+              >
                 <!-- Départements -->
-                <select
-                  class="form-select form-select-sm w-auto"
-                  aria-label="Small select example"
-                >
-                  <option selected>Départements</option>
-                  <option value="1">Ain</option>
-                  <option value="2">Aisne</option>
-                  <option value="3">Allier</option>
-                  <option value="4">Alpes de Haute-Provence</option>
-                </select>
-                <!-- Categories -->
-                <select
-                  class="form-select form-select-sm w-auto mt-3"
-                  aria-label="Small select example"
-                >
-                  <option selected>Catégories</option>
-                  <option value="1">Plantes</option>
-                  <option value="2">Graines</option>
-                  <option value="3">Arbres</option>
-                </select>
+                <div>
+                  <p class="m-0">Départements</p>
+                  <select
+                    class="form-departements form-select form-select-sm w-auto"
+                    aria-label="Small select example"
+                  >
+                    <option selected>Tous les départements</option>
+                    <option value="1">Ain</option>
+                    <option value="2">Aisne</option>
+                    <option value="3">Allier</option>
+                    <option value="4">Alpes de Haute-Provence</option>
+                  </select>
+                  <!-- Categories -->
+                  <div class="filter-categories ps-1 mt-2">
+                    <p class="m-0">Catégories</p>
+                    <div>
+                      <input
+                        type="checkbox"
+                        id="plants"
+                        name="plants"
+                        checked
+                      />
+                      <label for="plants">Plantes</label>
+                    </div>
+
+                    <div>
+                      <input type="checkbox" id="seeds" name="seeds" />
+                      <label for="seeds">Graines</label>
+                    </div>
+
+                    <div>
+                      <input type="checkbox" id="trees" name="trees" />
+                      <label for="trees">Arbres</label>
+                    </div>
+                  </div>
+                  <!-- <select
+                    class="form-select form-select-sm w-auto mt-3"
+                    aria-label="Small select example"
+                  >
+                    <option selected>Catégories</option>
+                    <option value="1">Plantes</option>
+                    <option value="2">Graines</option>
+                    <option value="3">Arbres</option>
+                  </select> -->
+                </div>
+                <!-- Boutons filtres -->
                 <div class="d-flex justify-content-between">
-                  <button type="submit" class="btn btn-action">Afficher</button>
-                  <button type="button" class="btn btn-action">Effacer</button>
+                  <button type="submit" class="btn btn-action btn-filter">
+                    Afficher
+                  </button>
+                  <button type="button" class="btn btn-action btn-filter">
+                    Effacer
+                  </button>
                 </div>
               </div>
-              !
             </div>
           </div>
         </form>
@@ -116,10 +151,10 @@
               <div class="d-flex justify-content-between">
                 <h5>
                   <a class="text-black text-decoration-none" href="#"
-                    >Lis blancs</a
+                    >Lys blancs</a
                   >
                 </h5>
-                <i class="bi bi-heart"></i>
+                <a href="" class="text-black"><i class="bi bi-heart"></i></a>
               </div>
               <p class="text-secondary">
                 Jeune pousse, mesure environs 60cm. Parfumée.
@@ -128,7 +163,7 @@
                 <div><p class="m-0">Amiens, 80000</p></div>
                 <div>
                   <i class="fa-regular fa-star"></i>
-                  <span class="ms-1 fw-bold">5</span>
+                  <span class="fw-bold">5</span>
                 </div>
               </div>
             </div>
@@ -146,7 +181,7 @@
                     >Lilas purple</a
                   >
                 </h5>
-                <i class="bi bi-heart"></i>
+                <a href="" class="text-black"><i class="bi bi-heart"></i></a>
               </div>
               <p class="text-secondary">
                 Plusieurs pousses de disponible. J'ai également d'autres
@@ -156,7 +191,7 @@
                 <div><p class="m-0">Amiens, 80000</p></div>
                 <div>
                   <i class="fa-regular fa-star"></i>
-                  <span class="ms-1 fw-bold">5</span>
+                  <span class="fw-bold">5</span>
                 </div>
               </div>
             </div>
@@ -174,7 +209,7 @@
                     >Semis tomates</a
                   >
                 </h5>
-                <i class="bi bi-heart"></i>
+                <a href="" class="text-black"><i class="bi bi-heart"></i></a>
               </div>
               <p class="text-secondary">
                 Plusieurs de disponible. N’hésitez pas à me contacter!
@@ -183,7 +218,7 @@
                 <div><p class="m-0">Amiens, 80000</p></div>
                 <div>
                   <i class="fa-regular fa-star"></i>
-                  <span class="ms-1 fw-bold">4</span>
+                  <span class="fw-bold">4</span>
                 </div>
               </div>
             </div>
@@ -201,7 +236,7 @@
                     >Graines en vrac</a
                   >
                 </h5>
-                <i class="bi bi-heart"></i>
+                <a href="" class="text-black"><i class="bi bi-heart"></i></a>
               </div>
               <p class="text-secondary">
                 Quantité importante. Contactez moi pour plus d’informations.
@@ -210,7 +245,7 @@
                 <div><p class="m-0">Amiens, 80000</p></div>
                 <div>
                   <i class="fa-regular fa-star"></i>
-                  <span class="ms-1 fw-bold">4</span>
+                  <span class="fw-bold">4</span>
                 </div>
               </div>
             </div>
