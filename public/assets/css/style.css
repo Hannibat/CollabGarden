@@ -94,3 +94,248 @@ float: right;
   background-color: #f4f4f4;
   border-radius: 30px;
 }
+:root {
+  font-size: 16px;
+}
+
+/* Fonts */
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-Regular.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 700;
+  src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-Bold.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 600;
+  src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-SemiBold.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 300;
+  src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-Light.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 200;
+  src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-ExtraLight.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  src: url(/public/assets/font/inter/Inter-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 600;
+  src: url(/public/assets/font/inter/Inter-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 700;
+  src: url(/public/assets/font/inter/Inter-Bold.ttf) format("truetype");
+}
+
+/* Hero */
+#hero p {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 1rem;
+  width: 45%;
+  /* background-color: rgba(255, 255, 255, 0.498); */
+}
+
+.bg-hero-image {
+  background-image: url(/public/assets/img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 30vh;
+}
+
+/* Buttons */
+.btn-mobile-home {
+  background-image: linear-gradient(
+    to right top,
+    #8aa59a,
+    #8aaa9d,
+    #8aafa0,
+    #89b4a2,
+    #89b9a5
+  );
+  color: black;
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 1.2rem;
+  width: 30%;
+}
+
+.btn-action {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  background-image: linear-gradient(
+    to right top,
+    #904133,
+    #9c4636,
+    #a84a3a,
+    #b44f3d,
+    #c05441
+  );
+  color: white;
+}
+
+.btn-more {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: white;
+  background-color: #8aa59a;
+}
+
+/* Headings */
+.categories h2 {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 0%;
+}
+
+.categories h5 {
+  margin-bottom: 0%;
+}
+
+/* Cards Home*/
+.card {
+  width: 18rem;
+}
+
+.card-title {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.card-img-top {
+  height: 55%;
+}
+
+/* Events */
+.bg-event-image {
+  background-image: url(/public/assets/img/events.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+
+#events p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: white;
+  width: 40%;
+  background-color: #8aa59ab0;
+  padding: 1.5%;
+}
+
+/* Announcements, form, filters */
+.form-sort {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  background-color: #8aa59a;
+}
+
+.form-select option {
+  font-size: 0.8rem;
+}
+
+.filters p {
+  font-family: "Inter";
+  font-size: 1rem;
+}
+
+.announcements {
+  font-family: "Inter";
+}
+
+/* Navbars */
+.navbar-mobile p {
+  font-family: "Montserrat";
+  font-size: 0.9em;
+  margin-bottom: 2%;
+}
+
+.navbar-mobile ul {
+  list-style: none;
+}
+
+/* Media queries */
+@media ((min-width: 576px) and (orientation: portrait)) {
+  .bg-hero-image {
+    height: 45vh;
+  }
+}
+
+@media ((min-width: 576px) and (orientation: landscape)) {
+  .bg-hero-image {
+    height: 50vh;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    font-size: 20px;
+  }
+  .bg-hero-image {
+    height: 55vh;
+  }
+  .btn-action {
+    font-weight: 600;
+  }
+  #hero p {
+    font-size: 1rem;
+    width: 30%;
+  }
+}
+
+@media ((min-width: 992px) and (orientation: portrait)) {
+  .bg-event-image {
+    height: 35vh;
+  }
+}
+
+@media (min-width: 992px) {
+  :root {
+    font-size: 25px;
+  }
+
+  .bg-hero-image {
+    height: 60vh;
+  }
+
+  .categories {
+    margin-top: 5%;
+  }
+
+  #hero p {
+    font-size: 1rem;
+    width: 30%;
+  }
+}

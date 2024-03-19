@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./lib/bootstrap-5.3.3-dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/bootstrap-icons.svg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./public/assets/css/style.css" />
+    <title>CollabGarden</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h1 class="d-none d-lg-block">Annonces</h1>
+      <div class="d-lg-none d-flex justify-content-center my-3">
+        <button class="btn btn-action">CRÉER UNE ANNONCE</button>
+      </div>
+      <div class="container filters">
+        <form action="">
+          <div class="d-flex justify-content-between">
+            <select
+              class="form-select form-sort form-select-sm w-auto"
+              aria-label="Small select example"
+            >
+              <option selected>Trier par</option>
+              <option value="1">Plus récents</option>
+              <option value="2">Plus anciennes</option>
+              <option value="3">Mieux noté</option>
+            </select>
+            <!-- Filtres -->
+            <button
+              class="btn btn-action"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#staticBackdrop"
+              aria-controls="staticBackdrop"
+            >
+              Filtres
+              <i class="bi bi-funnel"></i>
+            </button>
+
+            <div
+              class="offcanvas offcanvas-end"
+              data-bs-backdrop="static"
+              tabindex="-1"
+              id="staticBackdrop"
+              aria-labelledby="staticBackdropLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="staticBackdropLabel">
+                  Filtres
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <!-- Départements -->
+                <select
+                  class="form-select form-select-sm w-auto"
+                  aria-label="Small select example"
+                >
+                  <option selected>Départements</option>
+                  <option value="1">Ain</option>
+                  <option value="2">Aisne</option>
+                  <option value="3">Allier</option>
+                  <option value="4">Alpes de Haute-Provence</option>
+                </select>
+                <!-- Categories -->
+                <select
+                  class="form-select form-select-sm w-auto"
+                  aria-label="Small select example"
+                >
+                  <option selected>Catégories</option>
+                  <option value="1">Plantes</option>
+                  <option value="2">Graines</option>
+                  <option value="3">Arbres</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </form>
+        <!-- Message de résultat de recherche -->
+        <div class="mt-2">
+          <p>4 annonce(s) correspondant à votre recherche:</p>
+        </div>
+      </div>
+      <div id="announcements" class="container">
+        <div class="row">
+          <div class="col-12 d-flex gap-3 bg-secondary-subtle py-2 rounded-2">
+            <img
+              src="./public/assets/img/plantes/lilas.jpg"
+              alt=""
+              class="w-25 rounded-2"
+            />
+            <div>
+              <h5>
+                <a class="text-black text-decoration-none" href="#"
+                  >Lis blancs</a
+                >
+              </h5>
+              <p class="text-secondary">
+                Jeune pousse, mesure environs 60cm. Parfumée.
+              </p>
+              <div class="d-flex justify-content-end align-items-center">
+                <i class="fa-regular fa-star"></i>
+                <span class="ms-1 fw-bold">5</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="container d-flex gap-3 bg-secondary-subtle py-2 rounded-2"
+          >
+            <img
+              src="./public/assets/img/plantes/lilas.jpg"
+              alt=""
+              class="w-25 rounded-2"
+            />
+            <div>
+              <h5>
+                <a class="text-black text-decoration-none" href="#"
+                  >Lis blancs</a
+                >
+              </h5>
+              <p class="text-secondary">
+                Jeune pousse, mesure environs 60cm. Parfumée.
+              </p>
+              <div class="d-flex justify-content-end align-items-center">
+                <i class="fa-regular fa-star"></i>
+                <span class="ms-1 fw-bold">5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script
+      src="https://kit.fontawesome.com/b4f9175766.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./lib/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
