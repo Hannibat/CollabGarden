@@ -50,19 +50,170 @@
           </div>
           <div class="mt-2">Membre depuis le 12/03/2024</div>
           <div>Amiens, 80000</div>
-          <div class="info">Passionné par la plante depuis ma tendre jeuneusse.</div>
+          <div class="info mb-3">Passionnée par la plante depuis ma tendre enfance.</div>
 
+        </div>
+
+        <hr>
+
+        <div class="container filters">
+          <div class="mt-2"></div>
+          <form action="">
+            <div class="d-flex justify-content-between">
+                <h4>4 annonce(s) en ligne</h4>
+              <!-- Filtres -->
+              <button
+                class="btn btn-action"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#staticBackdrop"
+                aria-controls="staticBackdrop"
+              >
+                Filtres
+                <i class="bi bi-funnel"></i>
+              </button>
+  
+              <div
+                class="offcanvas offcanvas-end"
+                data-bs-backdrop="static"
+                tabindex="-1"
+                id="staticBackdrop"
+                aria-labelledby="staticBackdropLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="staticBackdropLabel">
+                    Filtres
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <!-- Départements -->
+                  <select
+                    class="form-select form-select-sm w-auto"
+                    aria-label="Small select example"
+                  >
+                    <option selected>Départements</option>
+                    <option value="1">Ain</option>
+                    <option value="2">Aisne</option>
+                    <option value="3">Allier</option>
+                    <option value="4">Alpes de Haute-Provence</option>
+                  </select>
+                  <!-- Categories -->
+                  <select
+                    class="form-select form-select-sm w-auto"
+                    aria-label="Small select example"
+                  >
+                    <option selected>Catégories</option>
+                    <option value="1">Plantes</option>
+                    <option value="2">Graines</option>
+                    <option value="3">Arbres</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </form>
+          <!-- Message de résultat de recherche -->
+  
+        </div>
+        <div id="announcements" class="container mt-2">
+          <div class="row">
+            <div class="col-12 d-flex gap-3 bg-secondary-subtle py-2 rounded-2">
+              <img
+                src="./public/assets/img/graines/graines_chia.jpg"
+                alt=""
+                class="w-25 rounded-2"
+              />
+              <div>
+                <h5>
+                  <a class="text-black text-decoration-none" href="#"
+                    >Graines de chia</a
+                  >
+                </h5>
+                <p class="text-secondary">
+                  Grosse quantité, à discuter.
+                </p>
+                  <i class="fa-regular fa-star"></i>
+                  <span class="ms-1 fw-bold">5</span>
+              </div>
+            </div>
+            <div class="container d-flex gap-3 bg-secondary-subtle py-2 rounded-2 mt-2">
+              <img
+                src="./public/assets/img/graines/blé.jpg"
+                alt=""
+                class="w-25 rounded-2"
+              />
+              <div>
+                <h5>
+                  <a class="text-black text-decoration-none" href="#"
+                    >Blé</a
+                  >
+                </h5>
+                <p class="text-secondary">
+                  Grosse quantité, à discuter.
+                </p>
+                  <i class="fa-regular fa-star"></i>
+                  <span class="ms-1 fw-bold">5</span>
+              </div>
+            </div>
+            <div class="container d-flex gap-3 bg-secondary-subtle py-2 rounded-2 mt-2">
+              <img
+                src="./public/assets/img/graines/graines_tournesol.jpg"
+                alt=""
+                class="w-25 rounded-2"
+              />
+              <div>
+                <h5>
+                  <a class="text-black text-decoration-none" href="#"
+                    >Tournesol</a
+                  >
+                </h5>
+                <p class="text-secondary">
+                  Grosse quantité, à discuter.
+                </p>
+
+                  <i class="fa-regular fa-star"></i>
+                  <span class="ms-1 fw-bold">5</span>
+
+              </div>
+            </div>
+            <div class="container d-flex gap-3 bg-secondary-subtle py-2 rounded-2 mt-2">
+              <img
+                src="./public/assets/img/plantes/lotus.jpg"
+                alt=""
+                class="w-25 rounded-2"
+              />
+              <div>
+                <h5>
+                  <a class="text-black text-decoration-none" href="#"
+                    >Lotus (3 épaisseurs)</a
+                  >
+                </h5>
+                <p class="text-secondary">
+                  Jeune pousse, mesure environs 60cm. Parfumée.
+                </p>
+                  <i class="fa-regular fa-star"></i>
+                  <span class="ms-1 fw-bold">5</span>
+
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
+      <!-- Version desktop -->
 
-      <div class="container desktop d-none d-md-block align-items-center justify-content-center">
-        <div class="box_info">
+      <div class="container desktop d-none d-md-block ">
+        <div class="box_info mb-3">
           <div class="row">
-            <div class="col-3 ms-3">
+            <div class="col-3">
               <img src="public/assets/img/profil/pasMal.png" class="p_profil_desktop ms-3 my-3">
             </div>
-            <div class="col-6 py-1 mt-2">
+            <div class="col-8 py-1 mt-2">
               <button class="py-1 ms-1 btn btn-mobile-follow d-flex align-items-center justify-content-center"><img
                   src="public/assets/img/profil/follow.png" class="w-25 pe-1" alt="" />
                 <p class="m-0">SUIVRE</p>
@@ -79,136 +230,164 @@
                 </div>
                 <div class="mt-">Membre depuis le 12/03/2024</div>
                 <div>Amiens, 80000</div>
-                <div class="info f">Passionné par la plante depuis ma tendre jeuneusse.</div>
+                <div class="info f">Passionnée par la plante depuis ma tendre enfance.</div>
               </div>
             </div>
-            <div class="col-2 py-1 mt-3">
+            <div class="col-1 py-1 mt-2">
               <img src="public/assets/img/profil/plus.png" class="plus" alt="options" />
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="container filters">
-        <div class="mt-2"></div>
-        <form action="">
-          <div class="d-flex justify-content-between">
-            <select
-              class="form-select form-sort form-select-sm w-auto"
-              aria-label="Small select example"
-            >
-              <option selected>Trier par</option>
-              <option value="1">Plus récents</option>
-              <option value="2">Plus anciennes</option>
-              <option value="3">Mieux noté</option>
-            </select>
-            <!-- Filtres -->
-            <button
-              class="btn btn-action"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#staticBackdrop"
-              aria-controls="staticBackdrop"
-            >
-              Filtres
-              <i class="bi bi-funnel"></i>
-            </button>
-
-            <div
-              class="offcanvas offcanvas-end"
-              data-bs-backdrop="static"
-              tabindex="-1"
-              id="staticBackdrop"
-              aria-labelledby="staticBackdropLabel"
-            >
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="staticBackdropLabel">
-                  Filtres
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="offcanvas-body">
-                <!-- Départements -->
-                <select
-                  class="form-select form-select-sm w-auto"
-                  aria-label="Small select example"
-                >
-                  <option selected>Départements</option>
-                  <option value="1">Ain</option>
-                  <option value="2">Aisne</option>
-                  <option value="3">Allier</option>
-                  <option value="4">Alpes de Haute-Provence</option>
-                </select>
-                <!-- Categories -->
-                <select
-                  class="form-select form-select-sm w-auto"
-                  aria-label="Small select example"
-                >
-                  <option selected>Catégories</option>
-                  <option value="1">Plantes</option>
-                  <option value="2">Graines</option>
-                  <option value="3">Arbres</option>
-                </select>
+        
+        <div class="container filters">
+          <div class="mt-2"></div>
+          <form action="">
+            <div class="d-flex justify-content-between">
+                <h5>4 annonce(s) en ligne</h5>
+              <!-- Filtres -->
+              <button
+                class="btn btn-action"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#staticBackdrop"
+                aria-controls="staticBackdrop"
+              >
+                Filtres
+                <i class="bi bi-funnel"></i>
+              </button>
+  
+              <div
+                class="offcanvas offcanvas-end"
+                data-bs-backdrop="static"
+                tabindex="-1"
+                id="staticBackdrop"
+                aria-labelledby="staticBackdropLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="staticBackdropLabel">
+                    Filtres
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <!-- Départements -->
+                  <select
+                    class="form-select form-select-sm w-auto"
+                    aria-label="Small select example"
+                  >
+                    <option selected>Départements</option>
+                    <option value="1">Ain</option>
+                    <option value="2">Aisne</option>
+                    <option value="3">Allier</option>
+                    <option value="4">Alpes de Haute-Provence</option>
+                  </select>
+                  <!-- Categories -->
+                  <select
+                    class="form-select form-select-sm w-auto"
+                    aria-label="Small select example"
+                  >
+                    <option selected>Catégories</option>
+                    <option value="1">Plantes</option>
+                    <option value="2">Graines</option>
+                    <option value="3">Arbres</option>
+                  </select>
+                </div>
               </div>
             </div>
-          </div>
-        </form>
-        <!-- Message de résultat de recherche -->
-        <div class="mt-2">
-
+          </form>
+          <!-- Message de résultat de recherche -->
+  
         </div>
-      </div>
-      <div id="announcements" class="container">
-        <div class="row">
-          <div class="col-12 d-flex gap-3 bg-secondary-subtle py-2 rounded-2">
-            <img
-              src="./public/assets/img/plantes/lilas.jpg"
-              alt=""
-              class="w-25 rounded-2"
-            />
-            <div>
-              <h5>
-                <a class="text-black text-decoration-none" href="#"
-                  >Lis blancs</a
-                >
-              </h5>
-              <p class="text-secondary">
-                Jeune pousse, mesure environs 60cm. Parfumée.
-              </p>
-              <div class="d-flex justify-content-end align-items-center">
-                <i class="fa-regular fa-star"></i>
-                <span class="ms-1 fw-bold">5</span>
+
+        <section class="categories container mt-2">
+          <!-- Graines -->
+          <div class="mb-3">
+            <div class="d-flex gap-3">
+              <div class="card border-0">
+                <img
+                  src="./public/assets/img/graines/graines_chia.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body px-0">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <h5 class="card-title">Graines de chia</h5>
+                    <div>
+                      <i class="fa-regular fa-star"></i>
+                      <span class="fw-bold">5</span>
+                    </div>
+                  </div>
+                  <p class="card-text">Amiens, 80000</p>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="container d-flex gap-3 bg-secondary-subtle py-2 rounded-2 mt-2">
-            <img
-              src="./public/assets/img/plantes/lilas.jpg"
-              alt=""
-              class="w-25 rounded-2"
-            />
-            <div>
-              <h5>
-                <a class="text-black text-decoration-none" href="#"
-                  >Lis blancs</a
-                >
-              </h5>
-              <p class="text-secondary">
-                Jeune pousse, mesure environs 60cm. Parfumée.
-              </p>
-              <div class="d-flex justify-content-end align-items-center">
-                <i class="fa-regular fa-star"></i>
-                <span class="ms-1 fw-bold">5</span>
+              <div class="card border-0">
+                <img
+                  src="./public/assets/img/graines/blé.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body px-0">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <h5 class="card-title">Blé</h5>
+                    <div>
+                      <i class="fa-regular fa-star"></i>
+                      <span class="fw-bold">5</span>
+                    </div>
+                  </div>
+                  <p class="card-text">Amiens, 80000</p>
+                </div>
               </div>
-            </div>
+              <div class="card border-0 d-none d-md-block">
+                <img
+                  src="./public/assets/img/graines/graines_tournesol.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body px-0">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <h5 class="card-title">Tournesol</h5>
+                    <div>
+                      <i class="fa-regular fa-star"></i>
+                      <span class="fw-bold">5</span>
+                    </div>
+                  </div>
+                  <p class="card-text">Amiens, 80000</p>
+                </div>
+              </div>
+              <div class="card border-0 d-none d-md-block">
+                <img
+                  src="./public/assets/img/plantes/lotus.jpg"
+                  class="card-img-top announce4"
+                  alt="..."
+                />
+                <div class="card-body px-0">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <h5 class="card-title">Lotus (3 épaisseurs)</h5>
+                    <div>
+                      <i class="fa-regular fa-star"></i>
+                      <span class="fw-bold">5</span>
+                    </div>
+                  </div>
+                  <p class="card-text">Amiens, 80000</p>
+                </div>
+              </div>
+
           </div>
-        </div>
+
+          
+        </section>
       </div>
+
+
+
+
+
+      
     </main>
     <footer></footer>
     <script
