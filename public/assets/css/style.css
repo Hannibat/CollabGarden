@@ -43,3 +43,54 @@
   margin-top: 12px;
   margin-bottom: 12px;
  }
+
+
+
+ /* FIN FOOTER */
+.bgProfil {
+width: 100vw;
+height: 45vh;
+}
+.p_profil {
+border-radius: 300px;
+width: 25vh;
+margin-top: -12vh;
+}
+.p_profil_desktop {
+  border-radius: 300px;
+  width: 25vh;
+  /* margin-top: -12vh; */
+  }
+
+.btn-mobile-follow {
+background-image: linear-gradient(
+  to right top,
+  #8aa59a,
+  #8aaa9d,
+  #8aafa0,
+  #89b4a2,
+  #89b9a5
+);
+color: black;
+font-family: "Montserrat";
+font-weight: 300;
+font-size: 1.2rem;
+width: 110px;
+float: right;
+}
+.plus {
+  width: 25px;
+  transform: rotate(90deg);
+}
+.rating {
+  width: 22px;
+  margin-right: 2px;
+}
+.info {
+  font-style: italic;
+}
+.box_info {
+  /* width: 90vw; */
+  background-color: #f4f4f4;
+  border-radius: 30px;
+}
