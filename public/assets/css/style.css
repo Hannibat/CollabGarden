@@ -182,7 +182,7 @@ float: right;
     #89b9a5
   );
   color: black;
-  font-family: "Montserrat";
+  font-family: "Montserrat" ,sans-serif;
   font-weight: 300;
   font-size: 1.2rem;
   width: 30%;
@@ -212,6 +212,12 @@ float: right;
 }
 
 /* Headings */
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
 .categories h2 {
   font-family: "Inter";
   font-weight: 700;
@@ -279,7 +285,7 @@ float: right;
 
 /* Navbars */
 .navbar-mobile p {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 0.9em;
   margin-bottom: 2%;
 }
@@ -315,6 +321,19 @@ float: right;
     font-size: 1rem;
     width: 30%;
   }
+
+  .bg-image {
+    height: 55vh;
+  }
+  
+  .footerBg_desktop{
+    background-color: #3B0A01;
+    background-repeat: no-repeat;
+    background-position: auto;
+    background-size: 100% 100%;
+    color: #FFFFFF;
+    margin-top: 2%;
+  }
 }
 
 @media ((min-width: 992px) and (orientation: portrait)) {
@@ -339,5 +358,11 @@ float: right;
   #hero p {
     font-size: 1rem;
     width: 30%;
+  }  .bg-image {
+    height: 60vh;
   }
+  .icon_socialMedia {
+    width:55px;
+    margin: 15px;
+}
 }
