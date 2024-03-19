@@ -1,98 +1,40 @@
-:root {
-  font-size: 16px;
-}
 
-@font-face {
-  font-family: "Montserrat";
-  font-weight: 400;
-  src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-Regular.ttf)
-    format("truetype");
-}
-
-@font-face {
-  font-family: "Montserrat";
-  font-weight: 700;
-  src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-Bold.ttf)
-    format("truetype");
-}
-
-@font-face {
-  font-family: "Montserrat";
-  font-weight: 600;
-  src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-SemiBold.ttf)
-    format("truetype");
-}
-
-@font-face {
-  font-family: "Montserrat";
-  font-weight: 300;
-  src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-Light.ttf)
-    format("truetype");
-}
-
-@font-face {
-  font-family: "Montserrat";
-  font-weight: 200;
-  src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-ExtraLight.ttf)
-    format("truetype");
-}
-
-@font-face {
-  font-family: "Inter";
-  font-weight: 400;
-  src: url(/public/assets/font/inter/Inter-Regular.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "Inter";
-  font-weight: 600;
-  src: url(/public/assets/font/inter/Inter-SemiBold.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "Inter";
-  font-weight: 700;
-  src: url(/public/assets/font/inter/Inter-Bold.ttf) format("truetype");
-}
-
-/* Hero */
-
-#hero p {
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 0.8em;
-  color: white;
-  width: 45%;
-  text-align: end;
-  /* background-color: rgba(255, 255, 255, 0.498); */
-  padding: 0.8%;
-}
-
-.bg-image {
-  background-image: url(/public/assets/img/hero.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 30vh;
-}
-
-@media (min-width: 576px) {
+@media (max-width: 767px) {
   .bg-image {
     height: 45vh;
   }
+  .footerBg{
+    background-color: #3B0A01;
+    background-repeat: no-repeat;
+    background-position: auto;
+    background-size: 100% 100%;
+    color: #FFFFFF;
+  }
+  .footerBg_desktop{
+    display: none;
+  }
 }
-
 @media (min-width: 768px) {
   .bg-image {
     height: 55vh;
   }
+  .footerBg_desktop{
+    background-color: #3B0A01;
+    background-repeat: no-repeat;
+    background-position: auto;
+    background-size: 100% 100%;
+    color: #FFFFFF;
+  }
+  .footerBg{
+    display: none;
+  }
 }
-
 @media (min-width: 992px) {
   .bg-image {
     height: 60vh;
   }
 }
+<<<<<<< HEAD
 
 /* Buttons */
 .btn-mobile-home {
@@ -154,3 +96,14 @@ form {
   font-weight: 400;
   font-size: 1em;
 }
+=======
+ .icon_socialMedia {
+    width:29px;
+ }
+ .bg_Social {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+ }
+>>>>>>> origin/footer
