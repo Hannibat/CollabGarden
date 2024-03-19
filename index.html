@@ -19,24 +19,104 @@
     <title>CollabGarden</title>
   </head>
   <body>
-<header></header>
+<header>
+  <header>
+    <nav class="mobile d-md-none mb-3">
+        <div class="container d-flex justify-content-between">
+            <div class="col-6"><img src="./public/assets/img/CollabGarden.svg" alt="logo collabgarden" class="logo">
+            </div>
+            <div class="col-6"><img src="./public/assets/img/profil/granny.png" alt="photo de profil"
+                    class="p_profil"></div>
+        </div>
+    </nav>
+
+    <!-- Version tablet-->
+    <nav class="tablet navbar navbar-expand justify-content-center d-none d-md-block d-lg-none">
+        <div class="container-fluid">
+            <img src="./public/assets/img/logo_desktop.png" alt="photo de profil" class="logo_desktop">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="input-group searchbar_desktop ms-4">
+                    <input type="text" class="form-control" placeholder="Recherche" aria-label="Recherche">
+                    <span class="input-group-text" id="basic-addon2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                        </svg>
+                    </span>
+                </div>
+
+                <ul class="navbar-nav ms-2 me-2">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page">Annonces</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Conseils & Jardin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Évènements</a>
+                    </li>
+                </ul>
+                <a class="btn btn-action ms-auto me-4"><i class="gg-add-r"></i></a>
+                <img src="./public/assets/img/profil/granny.png" alt="photo de profil" class="p_profilDesktop ">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Version desktop -->
+    <nav class="desktop navbar navbar-expand d-flex justify-content-center d-none d-lg-block">
+        <div class="container-fluid">
+            <img src="./public/assets/img/logo_desktop.png" alt="logo collabgarden" class="logo_desktop">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="input-group searchbar_desktop ms-4">
+                    <input type="text" class="form-control" placeholder="Recherche" aria-label="Recherche"
+                        aria-describedby="basic-addon2">
+                    <span class="input-group-text" id="basic-addon2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                        </svg>
+                    </span>
+                </div>
+
+                <ul class="navbar-nav ms-5 me-2">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Annonces</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Conseils & Jardin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Évènements</a>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-action ms-auto me-4">Créer une annonce</a>
+                <img src="./public/assets/img/profil/granny.png" alt="photo de profil d'une personne agée"
+                    class="p_profilDesktop ">
+            </div>
+
+        </div>
+    </nav>
+</header>
 
 
     <main>
       <div class="container-fluid p-0 mobile d-md-none align-items-center justify-content-center it">
-        <img src="../CollabGarden/public/assets/img/profil/bgProfil.jpg" class="bgProfil img-fluid">
+        <img src="/public/assets/img/profil/bgProfil.jpg" class="bgProfil img-fluid">
         <div class="row">
           <div class="col-4">
-            <img src="public/assets/img/profil/pasMal.png" class="p_profil ms-3">
+            <img src="public/assets/img/profil/pasMal.png" class="pp ms-3">
           </div>
-          <div class="col-6 py-1 mt-2">
-            <button class="btn btn-mobile-follow d-flex align-items-center justify-content-center"><img
+          <div class="col-4 py-1 mt-2">
+            <button class="btn btn-mobile-follow align-items-center justify-content-center data-bs-backdrop d-none d-md-block"><img
                 src="public/assets/img/profil/follow.png" class="w-25 pe-1" alt="" />
-              <p class="m-0">SUIVRE</p>
+              SUIVRE
             </button>
           </div>
-          <div class="col-2 py-1 mt-3">
-            <img src="public/assets/img/profil/plus.png" class="plus" alt="" />
+          <div class="col-4 mt-3">
+            <a class="text-black" href=""><i class="bi bi-person-fill-add fa-2x"></i></a>
+            <i class="bi bi-three-dots-vertical fa-2x"></i>
           </div>
         </div>
 
@@ -192,7 +272,7 @@
               <div>
                 <h5>
                   <a class="text-black text-decoration-none" href="#"
-                    >Lotus (3 épaisseurs)</a
+                    >Lotus</a
                   >
                 </h5>
                 <p class="text-secondary">
@@ -212,10 +292,10 @@
       <div class="container desktop d-none d-md-block ">
         <div class="box_info mb-3">
           <div class="row">
-            <div class="col-3">
+            <div class="col-4">
               <img src="public/assets/img/profil/pasMal.png" class="p_profil_desktop ms-3 my-3">
             </div>
-            <div class="col-8 py-1 mt-2">
+            <div class="col-5 py-1 mt-2">
               <button class="py-1 ms-1 btn btn-mobile-follow d-flex align-items-center justify-content-center"><img
                   src="public/assets/img/profil/follow.png" class="w-25 pe-1" alt="" />
                 <p class="m-0">SUIVRE</p>
@@ -314,7 +394,7 @@
                 <img
                   src="./public/assets/img/graines/graines_chia.jpg"
                   class="card-img-top"
-                  alt="..."
+                  alt="annonce"
                 />
                 <div class="card-body px-0">
                   <div class="d-flex align-items-center justify-content-between">
@@ -331,7 +411,7 @@
                 <img
                   src="./public/assets/img/graines/blé.jpg"
                   class="card-img-top"
-                  alt="..."
+                  alt="annonce"
                 />
                 <div class="card-body px-0">
                   <div class="d-flex align-items-center justify-content-between">
@@ -348,7 +428,7 @@
                 <img
                   src="./public/assets/img/graines/graines_tournesol.jpg"
                   class="card-img-top"
-                  alt="..."
+                  alt="annonce"
                 />
                 <div class="card-body px-0">
                   <div class="d-flex align-items-center justify-content-between">
@@ -369,7 +449,7 @@
                 />
                 <div class="card-body px-0">
                   <div class="d-flex align-items-center justify-content-between">
-                    <h5 class="card-title">Lotus (3 épaisseurs)</h5>
+                    <h5 class="card-title">Lotus</h5>
                     <div>
                       <i class="fa-regular fa-star"></i>
                       <span class="fw-bold">5</span>
@@ -391,7 +471,79 @@
 
       
     </main>
-    <footer></footer>
+    <footer>
+
+      <div class="container-fluid footerBg">
+          <div class="row text-center">
+              <div class="col-12">
+                  <div class="socialMedia">
+                      <img src="/public/assets/img/socialmedia/socialinsta.png" alt="logo instagram"
+                          class="icon_socialMedia bg_Social">
+                      <img src="/public/assets/img/socialmedia/socialfb.png" alt="logo facebook"
+                          class="icon_socialMedia bg_Social">
+                      <img src="/public/assets/img/socialmedia/x.png" alt="logo x"
+                          class="icon_socialMedia bg_Social">
+                  </div>
+              </div>
+              <div class="col-4">
+                  <div>Contact</div>
+              </div>
+
+              <div class="col-4">
+                  <div>Mentions légales</div>
+              </div>
+
+              <div class="col-4">
+                  <div>Politique de confidentialité</div>
+              </div>
+
+              <div class="col-12 mt-3">
+                  <div>Source photos: Pixabay & Unsplash</div>
+                  <div>© CollabGarden</div>
+              </div>
+
+          </div>
+      </div>
+  
+      <div class="container-fluid footerBg_desktop">
+          <div class="row text-center">
+              <div class="col-4 mt-2">
+                  <p>Contactez nous:</p>
+                  <div>Téléphone: 0621222324</div>
+                  <div>Email: collabgarden@gmail.com</div>
+                  <hr>
+                  <p>Mentions légales</p>
+              </div>
+              <div class="col-4">
+                  <div class="socialMedia">
+                      <img src="/public/assets/img/socialmedia/socialinsta.png" alt="logo instagram"
+                          class="icon_socialMedia bg_Social">
+                      <img src="/public/assets/img/socialmedia/socialfb.png" alt="logo facebook"
+                          class="icon_socialMedia bg_Social">
+                      <img src="/public/assets/img/socialmedia/x.png" alt="logo x"
+                          class="icon_socialMedia bg_Social">
+                  </div>
+              </div>
+              <div class="col-4 mt-4">
+                  <div>ANNONCES</div>
+                  <div>CONSEILS & JARDIN</div>
+                  <div>EVENEMENTS</div>
+                  <hr>
+                  <p>Politique de confidentialité</p>
+              </div>
+
+              <div class="col-12">
+                  <div>© CollabGarden</div>
+                  <div>Source photos: Pixabay & Unsplash</div>
+              </div>
+
+          </div>
+      </div>
+
+              </div>
+          </div>
+      </div>
+  </footer>
     <script
       src="https://kit.fontawesome.com/b4f9175766.js"
       crossorigin="anonymous"

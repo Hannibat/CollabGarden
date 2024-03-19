@@ -1,3 +1,36 @@
+.header {
+  height: 10vh;
+}
+
+.logo {
+  width: 100%;
+  margin-top: 20%;
+}
+
+.logo_desktop {
+  max-width: 7vw;
+  margin-right: 0px;
+
+}
+.p_profil {
+  width: 25%;
+  border-radius: 200px;
+  margin-top: 13%;
+  float: right;
+  margin-right: 5%;
+
+}
+.button_create_desktop {
+  width: 3vw;
+}
+.p_profil_desktop {
+  width: 5%;
+  border-radius: 200px;
+}
+
+.searchbar_desktop {
+  width: 20vw;   
+}
 
 @media (max-width: 767px) {
   .bg-image {
@@ -38,20 +71,17 @@
     width:29px;
  }
  .bg_Social {
-  background-color: #FFFFFF;
   border-radius: 20px;
   margin-top: 12px;
   margin-bottom: 12px;
  }
-
-
 
  /* FIN FOOTER */
 .bgProfil {
 width: 100vw;
 height: 45vh;
 }
-.p_profil {
+.pp {
 border-radius: 300px;
 width: 25vh;
 margin-top: -12vh;
@@ -59,8 +89,14 @@ margin-top: -12vh;
 .p_profil_desktop {
   border-radius: 300px;
   width: 25vh;
-  /* margin-top: -12vh; */
   }
+
+.p_profilDesktop {
+  width: 8%;
+  border-radius: 200px;
+  float: right;
+  margin-right: 5%;
+}
 
 .btn-mobile-follow {
 background-image: linear-gradient(
@@ -71,11 +107,11 @@ background-image: linear-gradient(
   #89b4a2,
   #89b9a5
 );
-color: black;
+
 font-family: "Montserrat";
 font-weight: 300;
-font-size: 1rem;
-width: 150px;
+
+width: 30%;
 float: right;
 }
 .plus {
@@ -365,4 +401,5 @@ h1 {
     width:55px;
     margin: 15px;
 }
+
 }
