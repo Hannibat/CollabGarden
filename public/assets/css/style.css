@@ -1,4 +1,329 @@
 
+.header {
+    height: 10vh;
+}
+
+.logo {
+    width: 100%;
+    margin-top: 20%;
+}
+
+.logo_desktop {
+    max-width: 7vw;
+    margin-right: 0px;
+
+}
+.p_profil {
+    width: 25%;
+    border-radius: 200px;
+    margin-top: 13%;
+    float: right;
+    margin-right: 5%;
+
+}
+.button_create_desktop {
+    width: 3vw;
+}
+.p_profil_desktop {
+    width: 5%;
+    border-radius: 200px;
+}
+
+.searchbar_desktop {
+    width: 20vw;   
+}
+
+
+.buttonNavbar_desktop {
+    background-color: #904133!important;
+}
+
+
+/* Bouton add annonce tablet */
+.gg-add-r {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 22px;
+    height: 22px;
+    border: 2px solid;
+    transform: scale(var(--ggs,1));
+    border-radius: 4px
+}
+.gg-add-r::after,
+.gg-add-r::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+    border-radius: 5px;
+    top: 8px;
+    left: 4px
+}
+.gg-add-r::after {
+    width: 2px;
+    height: 10px;
+    top: 4px;
+    left: 8px
+}
+
+
+
+:root {
+  font-size: 16px;
+}
+
+/* Fonts */
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-Regular.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 700;
+  src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-Bold.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 600;
+  src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-SemiBold.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 300;
+  src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-Light.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 200;
+  src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-ExtraLight.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  src: url(/public/assets/font/inter/Inter-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 600;
+  src: url(/public/assets/font/inter/Inter-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 700;
+  src: url(/public/assets/font/inter/Inter-Bold.ttf) format("truetype");
+}
+
+/* Hero */
+#hero p {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 1rem;
+  width: 45%;
+  /* background-color: rgba(255, 255, 255, 0.498); */
+}
+
+.bg-hero-image {
+  background-image: url(/public/assets/img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 30vh;
+}
+
+/* Buttons */
+.btn-mobile-home {
+  background-image: linear-gradient(
+    to right top,
+    #8aa59a,
+    #8aaa9d,
+    #8aafa0,
+    #89b4a2,
+    #89b9a5
+  );
+  color: black;
+  font-family: "Montserrat" ,sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  width: 30%;
+}
+
+.btn-action {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  background-image: linear-gradient(
+    to right top,
+    #904133,
+    #9c4636,
+    #a84a3a,
+    #b44f3d,
+    #c05441
+  );
+  color: white;
+}
+
+.btn-more {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: white;
+  background-color: #8aa59a;
+}
+
+/* Headings */
+.categories h2 {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 0%;
+}
+
+.categories h5 {
+  margin-bottom: 0%;
+}
+
+/* Cards Home*/
+.card {
+  width: 18rem;
+}
+
+.card-title {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.card-img-top {
+  height: 55%;
+}
+
+/* Events */
+.bg-event-image {
+  background-image: url(/public/assets/img/events.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+
+#events p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: white;
+  width: 40%;
+  background-color: #8aa59ab0;
+  padding: 1.5%;
+}
+
+/* Navbars */
+.navbar-mobile p {
+  font-family: "Montserrat";
+  font-size: 0.9em;
+  margin-bottom: 2%;
+}
+
+.navbar-mobile ul {
+  list-style: none;
+}
+
+/* Media queries */
+@media ((min-width: 576px) and (orientation: portrait)) {
+  .bg-hero-image {
+    height: 45vh;
+  }
+}
+
+@media ((min-width: 576px) and (orientation: landscape)) {
+  .bg-hero-image {
+    height: 50vh;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    font-size: 20px;
+  }
+  .bg-hero-image {
+    height: 55vh;
+  }
+  .btn-action {
+    font-weight: 600;
+  }
+  #hero p {
+    font-size: 1rem;
+    width: 30%;
+  }
+
+  .bg-image {
+    height: 55vh;
+  }
+  
+  .footerBg_desktop{
+    background-color: #3B0A01;
+    background-repeat: no-repeat;
+    background-position: auto;
+    background-size: 100% 100%;
+    color: #FFFFFF;
+    margin-top: 5%;
+  }
+  .footerBg{
+    display: none;
+  }
+}
+
+@media ((min-width: 992px) and (orientation: portrait)) {
+  .bg-event-image {
+    height: 35vh;
+  }
+}
+
+@media (min-width: 992px) {
+  :root {
+    font-size: 25px;
+  }
+
+  .bg-hero-image {
+    height: 60vh;
+  }
+
+  .categories {
+    margin-top: 5%;
+  }
+
+  #hero p {
+    font-size: 1rem;
+    width: 30%;
+  }  .bg-image {
+    height: 60vh;
+  }
+  .icon_socialMedia {
+    width:55px;
+    margin: 15px;
+}
+}
+
+
+
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/add-r.css');
+
+
 @media (max-width: 767px) {
   .bg-image {
     height: 45vh;
@@ -13,6 +338,11 @@
   .footerBg_desktop{
     display: none;
   }
+  .icon_socialMedia {
+    width:35px;
+    margin: 10px;
+}
+}
 }
 @media (min-width: 768px) {
   .bg-image {
