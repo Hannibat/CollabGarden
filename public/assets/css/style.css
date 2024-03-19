@@ -75,7 +75,7 @@ color: black;
 font-family: "Montserrat";
 font-weight: 300;
 font-size: 1.2rem;
-width: 110px;
+width: 150px;
 float: right;
 }
 .plus {
@@ -84,6 +84,7 @@ float: right;
 }
 .rating {
   width: 22px;
+  height: 22px;
   margin-right: 2px;
 }
 .info {
