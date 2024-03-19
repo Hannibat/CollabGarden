@@ -33,12 +33,6 @@
     width: 20vw;   
 }
 
-
-.buttonNavbar_desktop {
-    background-color: #904133!important;
-}
-
-
 /* Bouton add annonce tablet */
 .gg-add-r {
     box-sizing: border-box;
@@ -48,7 +42,8 @@
     height: 22px;
     border: 2px solid;
     transform: scale(var(--ggs,1));
-    border-radius: 4px
+    border-radius: 4px;
+    
 }
 .gg-add-r::after,
 .gg-add-r::before {
@@ -69,8 +64,6 @@
     top: 4px;
     left: 8px
 }
-
-
 
 :root {
   font-size: 16px;
@@ -188,6 +181,12 @@
 }
 
 /* Headings */
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
 .categories h2 {
   font-family: "Inter";
   font-weight: 700;
@@ -234,7 +233,7 @@
 
 /* Navbars */
 .navbar-mobile p {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 0.9em;
   margin-bottom: 2%;
 }
@@ -281,10 +280,7 @@
     background-position: auto;
     background-size: 100% 100%;
     color: #FFFFFF;
-    margin-top: 5%;
-  }
-  .footerBg{
-    display: none;
+    margin-top: 2%;
   }
 }
 
@@ -343,7 +339,7 @@
     margin: 10px;
 }
 }
-}
+
 @media (min-width: 768px) {
   .bg-image {
     height: 55vh;
@@ -358,13 +354,17 @@
   .footerBg{
     display: none;
   }
+  .icon_socialMedia {
+    width:55px;
+    margin: 10px;
+}
 }
 @media (min-width: 992px) {
   .bg-image {
     height: 60vh;
   }
+
 }
-<<<<<<< HEAD
 
 /* Buttons */
 .btn-mobile-home {
@@ -385,23 +385,6 @@
   font-size: 1.2rem;
 }
 
-.btn-action {
-  font-family: "Montserrat";
-  font-weight: 600;
-  font-size: 1rem;
-  background-image: linear-gradient(
-    to right top,
-    #904133,
-    #9c4636,
-    #a84a3a,
-    #b44f3d,
-    #c05441
-  );
-  color: white;
-  border: none;
-  border-radius: 3px;
-  padding: 2% 3%;
-}
 
 .btn-more {
   font-family: "Montserrat", sans-serif;
@@ -426,14 +409,3 @@ form {
   font-weight: 400;
   font-size: 1em;
 }
-=======
- .icon_socialMedia {
-    width:29px;
- }
- .bg_Social {
-  background-color: #FFFFFF;
-  border-radius: 20px;
-  margin-top: 12px;
-  margin-bottom: 12px;
- }
->>>>>>> origin/footer
