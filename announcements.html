@@ -33,7 +33,7 @@
         <form action="">
           <div class="d-flex justify-content-between">
             <select
-              class="form-select form-sort form-select-sm w-auto"
+              class="form-select filter-sort form-select-sm w-auto"
               aria-label="Small select example"
             >
               <option selected>Trier par</option>
@@ -41,7 +41,8 @@
               <option value="2">Plus anciennes</option>
               <option value="3">Mieux noté</option>
             </select>
-            <!-- Filtres -->
+
+            <!-- Filtres Offcanva -->
             <button
               class="btn btn-action btn-filter"
               type="button"
@@ -76,51 +77,46 @@
               >
                 <!-- Départements -->
                 <div>
-                  <p class="m-0">Départements</p>
-                  <select
-                    class="form-departements form-select form-select-sm w-auto"
-                    aria-label="Small select example"
-                  >
-                    <option selected>Tous les départements</option>
-                    <option value="1">Ain</option>
-                    <option value="2">Aisne</option>
-                    <option value="3">Allier</option>
-                    <option value="4">Alpes de Haute-Provence</option>
-                  </select>
+                  <div>
+                    <p class="m-0">Départements</p>
+                    <select
+                      class="filter-departements form-select form-select-sm w-auto"
+                      aria-label="Small select example"
+                    >
+                      <option selected>Tous les départements</option>
+                      <option value="1">Ain</option>
+                      <option value="2">Aisne</option>
+                      <option value="3">Allier</option>
+                      <option value="4">Alpes de Haute-Provence</option>
+                    </select>
+                  </div>
                   <!-- Categories -->
-                  <div class="filter-categories ps-1 mt-2">
+                  <div class="filter-categories mt-2">
                     <p class="m-0">Catégories</p>
                     <div>
                       <input
                         type="checkbox"
-                        id="plants"
-                        name="plants"
+                        id="allCategories"
+                        name="allCategories"
                         checked
                       />
+                      <label for="allCategories">Toutes les catégories</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="plants" name="plants" />
                       <label for="plants">Plantes</label>
                     </div>
-
                     <div>
                       <input type="checkbox" id="seeds" name="seeds" />
                       <label for="seeds">Graines</label>
                     </div>
-
                     <div>
                       <input type="checkbox" id="trees" name="trees" />
                       <label for="trees">Arbres</label>
                     </div>
                   </div>
-                  <!-- <select
-                    class="form-select form-select-sm w-auto mt-3"
-                    aria-label="Small select example"
-                  >
-                    <option selected>Catégories</option>
-                    <option value="1">Plantes</option>
-                    <option value="2">Graines</option>
-                    <option value="3">Arbres</option>
-                  </select> -->
                 </div>
-                <!-- Boutons filtres -->
+                <!-- Boutons filtres offcanva-->
                 <div class="d-flex justify-content-between">
                   <button type="submit" class="btn btn-action btn-filter">
                     Afficher
@@ -161,7 +157,7 @@
               </p>
               <div class="d-flex justify-content-between align-items-center">
                 <div><p class="m-0">Amiens, 80000</p></div>
-                <div>
+                <div class="announcement-rate">
                   <i class="fa-regular fa-star"></i>
                   <span class="fw-bold">5</span>
                 </div>
@@ -189,7 +185,7 @@
               </p>
               <div class="d-flex justify-content-between align-items-center">
                 <div><p class="m-0">Amiens, 80000</p></div>
-                <div>
+                <div class="announcement-rate">
                   <i class="fa-regular fa-star"></i>
                   <span class="fw-bold">5</span>
                 </div>
@@ -216,7 +212,7 @@
               </p>
               <div class="d-flex justify-content-between align-items-center">
                 <div><p class="m-0">Amiens, 80000</p></div>
-                <div>
+                <div class="announcement-rate">
                   <i class="fa-regular fa-star"></i>
                   <span class="fw-bold">4</span>
                 </div>
@@ -243,7 +239,7 @@
               </p>
               <div class="d-flex justify-content-between align-items-center">
                 <div><p class="m-0">Amiens, 80000</p></div>
-                <div>
+                <div class="announcement-rate">
                   <i class="fa-regular fa-star"></i>
                   <span class="fw-bold">4</span>
                 </div>

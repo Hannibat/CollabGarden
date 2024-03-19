@@ -120,6 +120,12 @@ h1 {
   font-size: 1.5rem;
 }
 
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
 .categories h2 {
   font-family: "Inter";
   font-weight: 700;
@@ -146,7 +152,7 @@ h1 {
   height: 55%;
 }
 
-/* Events */
+/* Events Home*/
 .bg-event-image {
   background-image: url(/public/assets/img/events.jpg);
   background-repeat: no-repeat;
@@ -164,8 +170,8 @@ h1 {
   padding: 1.5%;
 }
 
-/* Announcements, form, filters */
-.form-sort {
+/* Announcements page*/
+.filter-sort {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 0.8rem;
@@ -173,18 +179,18 @@ h1 {
 }
 
 .filters p {
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
 }
 
 .filter-categories label,
-.form-departements option,
+.filter-departements,
 #announcements p,
-.form-sort option {
-  font-family: "Inter";
+.announcement-rate {
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 .announcement-image {
@@ -229,7 +235,6 @@ h1 {
     font-size: 1rem;
     width: 30%;
   }
-
   .announcement-image {
     width: 15%;
   }
@@ -260,7 +265,7 @@ h1 {
   }
 
   .announcement-image {
-    width: 30%;
+    width: 25%;
   }
 
   .btn-filter {
