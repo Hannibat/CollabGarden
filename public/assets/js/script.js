@@ -1,3 +1,4 @@
+//Récuperatuion de data
 const getResults = async (latitude, longitude) => {
   const response = await fetch(
     `https://opendata.agencebio.org/api/gouv/operateurs/?q=graines&activite=Production&lat=${latitude}&lng=${longitude}&nb=100`
@@ -19,29 +20,17 @@ const findUserGeo = () => {
   }
 
   function error() {
-    status.textContent = "Unable to retrieve your location";
+    status.textContent = "Impossible de récupérer votre position";
   }
 
   if (!navigator.geolocation) {
-    status.textContent = "Geolocation is not supported by your browser";
+    status.textContent =
+      "La géolocalisation n'est pas supportée par votre navigateur";
   } else {
-    status.textContent = "Locating…";
+    status.textContent = "Localisation…";
     navigator.geolocation.getCurrentPosition(success, error);
   }
 };
-
-// Map
-// const mapLocalisation = (latitude, longitude) => {
-//   let map = L.map("map").setView([latitude, longitude], 13);
-
-//   L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-//     maxZoom: 19,
-//     attribution:
-//       '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-//   }).addTo(map);
-
-//   addMapMarkers(map);
-// };
 
 const getGeo = (datas, latitude, longitude) => {
   let map = L.map("map").setView([latitude, longitude], 13);
