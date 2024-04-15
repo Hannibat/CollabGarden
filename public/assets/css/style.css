@@ -420,3 +420,7 @@ h5 {
 .button_create_desktop {
   width: 3vw;
 }
+
+#map {
+  height: 500px;
+}
