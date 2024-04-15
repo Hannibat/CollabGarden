@@ -4,6 +4,13 @@ const getResults = async (latitude, longitude) => {
     `https://opendata.agencebio.org/api/gouv/operateurs/?q=graines&activite=Production&lat=${latitude}&lng=${longitude}&nb=100`
   );
   const datas = await response.json();
+
+  let localData = {
+    lat: latitude,
+    long: longitude,
+    datas: datas,
+  };
+  localStorage.setItem("userData", JSON.stringify(localData));
   getGeo(datas, latitude, longitude);
 };
 
@@ -15,8 +22,8 @@ const findUserGeo = () => {
     const longitude = position.coords.longitude;
 
     status.textContent = "";
-    getResults(latitude, longitude);
-    // mapLocalisation(latitude, longitude);
+    verifyLocalStorage(latitude, longitude);
+    // getResults(latitude, longitude);
   }
 
   function error() {
@@ -42,7 +49,6 @@ const getGeo = (datas, latitude, longitude) => {
   }).addTo(map);
 
   let producers = datas.items;
-  console.log(producers);
   producers.forEach((producer) => {
     let lat = producer.adressesOperateurs[0].lat;
     let long = producer.adressesOperateurs[0].long;
@@ -60,6 +66,19 @@ const getGeo = (datas, latitude, longitude) => {
       );
     }
   });
+};
+
+const verifyLocalStorage = (latitude, longitude) => {
+  if (localStorage.getItem("userData") !== null) {
+    let userDataFromStorage = JSON.parse(localStorage.getItem("userData"));
+    if (!userDataFromStorage.lat == latitude) {
+      getResults(latitude, longitude);
+    } else {
+      getGeo(userDataFromStorage.datas, latitude, longitude);
+    }
+  } else {
+    getResults(latitude, longitude);
+  }
 };
 
 document.addEventListener("DOMContentLoaded", findUserGeo);
