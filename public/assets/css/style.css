@@ -1,3 +1,8 @@
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .header {
   height: 10vh;
 }
@@ -171,7 +176,11 @@ font-size: 1.2rem;
 width: 30%;
 }
 
+.btn-action:active {
+  color: white !important;
+}
 .btn-action {
+text-decoration: none;
 font-family: "Montserrat", sans-serif;
 font-weight: 400;
 font-size: 1rem;
@@ -186,7 +195,16 @@ background-image: linear-gradient(
 color: white;
 }
 
+.btn-more:active {
+  color: #8AA59A !important;
+}
+
+.btn-more:hover {
+  color: #8AA59A !important;
+}
+
 .btn-more {
+text-decoration: none;
 font-family: "Montserrat", sans-serif;
 font-weight: 600;
 font-size: 0.9rem;
@@ -291,7 +309,7 @@ padding: 1.5%;
 /* Navbars */
 .navbar-mobile p {
 font-family: "Montserrat", sans-serif;
-font-size: 0.9em;
+font-size: 0.7em;
 margin-bottom: 2%;
 }
 
@@ -407,7 +425,7 @@ list-style: none;
 
 .nav-link {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.2em;
+  font-size: 1em;
   margin-bottom: 2%;
 }
 

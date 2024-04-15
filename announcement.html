@@ -28,7 +28,7 @@
         <!-- Version tablet-->
         <nav class="tablet navbar navbar-expand justify-content-center d-none d-md-block d-lg-none">
             <div class="container-fluid">
-                <img src="./public/assets/img/logo_desktop.png" alt="photo de profil" class="logo_desktop" />
+                <img href="http://127.0.0.1:5500/home.html" src="./public/assets/img/logo_desktop.png" alt="photo de profil" class="logo_desktop" />
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <div class="input-group searchbar_desktop ms-4">
                         <input type="text" class="form-control" placeholder="Recherche" aria-label="Recherche" />
@@ -43,7 +43,7 @@
 
                     <ul class="navbar-nav ms-2 me-2">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page">Annonces</a>
+                            <a href="http://127.0.0.1:5500/announcements.html" class="nav-link" aria-current="page">Annonces</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link">Conseils & Jardin</a>
@@ -52,7 +52,7 @@
                             <a class="nav-link">Évènements</a>
                         </li>
                     </ul>
-                    <a class="btn btn-action ms-auto me-4"><i class="gg-add-r"></i></a>
+                    <a href="http://127.0.0.1:5500/form.html" class="btn btn-action ms-auto me-4 text-white"><i class="gg-add-r"></i></a>
                     <img src="./public/assets/img/profil/granny.png" alt="photo de profil" class="p_profil_desktop" />
                 </div>
             </div>
@@ -77,7 +77,7 @@
 
                     <ul class="navbar-nav ms-5 me-2">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Annonces</a>
+                            <a href="http://127.0.0.1:5500/announcements.html" class="nav-link" aria-current="page" href="#">Annonces</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Conseils & Jardin</a>
@@ -86,7 +86,7 @@
                             <a class="nav-link" href="#">Évènements</a>
                         </li>
                     </ul>
-                    <a href="#" class="btn btn-action ms-auto me-4">Créer une annonce</a>
+                    <a href="http://127.0.0.1:5500/form.html" class="btn btn-action ms-auto me-4 text-decoration-none">Créer une annonce</a>
                     <img src="./public/assets/img/profil/granny.png" alt="photo de profil d'une personne agée"
                         class="p_profil_desktop" />
                 </div>
@@ -154,7 +154,7 @@
                             <p class="fs-small">Amiens, 80000</p>
                         </div>
                         <div class="col-5 col-lg-12 d-flex align-items-center justify-content-center">
-                            <button class="btn btn-action">Voir le profil</button>
+                            <a href="http://127.0.0.1:5500/profil.html"><button class="btn btn-action">Voir le profil</button></a>
                         </div>
                         <!-- Actions non-visible sur la version mobile -->
                         <div class="col-12 d-none d-lg-block">
@@ -177,7 +177,7 @@
         </div>
 
         <nav
-            class="navbar navbar-mobile d-md-none bg-white sticky-bottom rounded-4 p-0 mb-10 mx-3 border border-secondary-subtle">
+            class="navbar navbar-mobile d-md-none bg-white sticky-bottom rounded-4 p-0 mb-10 border border-secondary-subtle">
             <div class="container justify-content-center">
                 <ul class="list d-flex flex-nowrap p-0 m-0 ">
                     <li class="navbar-brand d-flex flex-row mx-2">
@@ -198,7 +198,7 @@
                             <p>Conseils</p>
                         </div>
                     </li>
-                    <li class="navbar-brand d-flex flex-nowrap mx-2">
+                    <li class="navbar-brand d-flex flex-nowrap mx-1">
                         <div class="text-center p-0">
                             <i class="bi bi-megaphone fs-1"></i>
                             <p>Sorties</p>
@@ -263,9 +263,10 @@
                     </div>
                 </div>
                 <div class="col-4 mt-4">
-                    <div>ANNONCES</div>
+                    <a href="http://127.0.0.1:5500/announcements.html"><div>ANNONCES</div></a>
                     <div>CONSEILS & JARDIN</div>
                     <div>EVENEMENTS</div>
+                    <div>PRODUCTEURS</div>
                     <hr>
                     <p>Politique de confidentialité</p>
                 </div>
