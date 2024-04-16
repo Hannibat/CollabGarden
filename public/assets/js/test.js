@@ -1,20 +1,9 @@
 let map;
-let layerGroup;
-let currentPositionLayer;
-let currentPosition;
 const spinner = document.querySelector(".spinner-border");
 const mapContainer = document.querySelector("#map");
-let redIcon = L.icon({
-  iconUrl: "./public/assets/img/marker.png",
-  iconSize: [38, 48],
-  shadowSize: [50, 64],
-  iconAnchor: [22, 49],
-  shadowAnchor: [4, 62],
-  popupAnchor: [-3, -76],
-});
 
 // API - Producteurs
-const getResults = async (latitude, longitude, keyName) => {
+const getResults = async (latitude, longitude) => {
   const response = await fetch(
     `https://opendata.agencebio.org/api/gouv/operateurs/?q=graines&activite=Production&lat=${latitude}&lng=${longitude}&nb=100`
   );
@@ -25,7 +14,7 @@ const getResults = async (latitude, longitude, keyName) => {
     long: longitude.toFixed(2),
     datas: datas,
   };
-  localStorage.setItem(keyName, JSON.stringify(localData));
+  localStorage.setItem("userData", JSON.stringify(localData));
   getGeoMarkers(datas);
 };
 
@@ -46,13 +35,9 @@ const findUserGeo = () => {
       attribution:
         '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     }).addTo(map);
-    currentPositionLayer = L.layerGroup().addTo(map);
-    currentPosition = L.marker([latitude, longitude], {
-      icon: redIcon,
-    }).addTo(currentPositionLayer);
     spinner.classList.add("loading-position");
     mapContainer.classList.add("opacity-50");
-    verifyLocalStorage(latitude, longitude, "userGeo");
+    verifyLocalStorage(latitude, longitude);
   }
 
   function error() {
@@ -70,7 +55,6 @@ const findUserGeo = () => {
 
 // Ajouter des marqueurs sur la carte
 const getGeoMarkers = (datas) => {
-  layerGroup = L.layerGroup().addTo(map);
   let producers = datas.items;
   producers.forEach((producer) => {
     let lat = producer.adressesOperateurs[0].lat;
@@ -78,7 +62,7 @@ const getGeoMarkers = (datas) => {
     let adress = producer.adressesOperateurs[0].lieu;
     let city = producer.adressesOperateurs[0].ville;
     let postalCode = producer.adressesOperateurs[0].codePostal;
-    let marker = L.marker([lat, long]).addTo(layerGroup);
+    let marker = L.marker([lat, long]).addTo(map);
     mapContainer.classList.remove("opacity-50");
     spinner.classList.remove("loading-position");
     if (producer.siteWebs.length != 0) {
@@ -91,45 +75,23 @@ const getGeoMarkers = (datas) => {
       );
     }
   });
-  map.on("click", onMapClick);
 };
 
 // Vérification du stockage local et sauvegarde des données
-const verifyLocalStorage = (latitude, longitude, keyName) => {
-  if (localStorage.getItem(keyName) !== null) {
-    let userDataFromStorage = JSON.parse(localStorage.getItem(keyName));
-    console.log(latitude, longitude);
+const verifyLocalStorage = (latitude, longitude) => {
+  if (localStorage.getItem("userData") !== null) {
+    let userDataFromStorage = JSON.parse(localStorage.getItem("userData"));
     if (
       userDataFromStorage.lat != latitude.toFixed(2) ||
       userDataFromStorage.long != longitude.toFixed(2)
     ) {
-      getResults(latitude, longitude, keyName);
+      getResults(latitude, longitude);
     } else {
       getGeoMarkers(userDataFromStorage.datas);
     }
   } else {
-    spinner.classList.add("loading-position");
-    mapContainer.classList.add("opacity-50");
-    getResults(latitude, longitude, keyName);
+    getResults(latitude, longitude);
   }
-};
-
-function onMapClick(e) {
-  let lat = e.latlng.lat;
-  let long = e.latlng.lng;
-  console.log(lat, long);
-  currentPositionLayer.clearLayers();
-  layerGroup.clearLayers();
-  addChosenPosition(lat, long);
-}
-
-const addChosenPosition = (latitude, longitude) => {
-  currentPositionLayer = L.layerGroup().addTo(map);
-  currentPosition = L.marker([latitude, longitude], {
-    icon: redIcon,
-  }).addTo(currentPositionLayer);
-  localStorage.removeItem("userChosenGeo");
-  verifyLocalStorage(latitude, longitude, "userChosenGeo");
 };
 
 document.addEventListener("DOMContentLoaded", findUserGeo);
