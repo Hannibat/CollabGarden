@@ -1,4 +1,3 @@
-//Récuperatuion de data
 const getResults = async (latitude, longitude) => {
   const response = await fetch(
     `https://opendata.agencebio.org/api/gouv/operateurs/?q=graines&activite=Production&lat=${latitude}&lng=${longitude}&nb=100`
