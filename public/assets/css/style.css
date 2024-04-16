@@ -15,7 +15,6 @@ a {
 .logo_desktop {
   max-width: 7vw;
   margin-right: 0px;
-
 }
 
 .button_create_desktop {
@@ -27,11 +26,10 @@ a {
 }
 
 .pprofil_desktop {
-    border-radius: 300px;
-    width: 25vh;
-    margin-top: -12vh;
-    }
-
+  border-radius: 300px;
+  width: 25vh;
+  margin-top: -12vh;
+}
 
 .p_profil {
   width: 25%;
@@ -42,14 +40,12 @@ a {
 }
 
 .searchbar_desktop {
-  width: 20vw;   
+  width: 20vw;
 }
-
 
 .buttonNavbar_desktop {
-  background-color: #904133!important;
+  background-color: #904133 !important;
 }
-
 
 /* Bouton add annonce tablet */
 .gg-add-r {
@@ -59,8 +55,8 @@ a {
   width: 22px;
   height: 22px;
   border: 2px solid;
-  transform: scale(var(--ggs,1));
-  border-radius: 4px
+  transform: scale(var(--ggs, 1));
+  border-radius: 4px;
 }
 .gg-add-r::after,
 .gg-add-r::before {
@@ -73,107 +69,105 @@ a {
   background: currentColor;
   border-radius: 5px;
   top: 8px;
-  left: 4px
+  left: 4px;
 }
 .gg-add-r::after {
   width: 2px;
   height: 10px;
   top: 4px;
-  left: 8px
+  left: 8px;
 }
 
-
-
 :root {
-font-size: 16px;
+  font-size: 16px;
 }
 
 /* Fonts */
 @font-face {
-font-family: "Montserrat";
-font-weight: 400;
-src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-Regular.ttf)
-  format("truetype");
+  font-family: "Montserrat";
+  font-weight: 400;
+  src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-Regular.ttf)
+    format("truetype");
 }
 
 @font-face {
-font-family: "Montserrat";
-font-weight: 700;
-src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-Bold.ttf)
-  format("truetype");
+  font-family: "Montserrat";
+  font-weight: 700;
+  src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-Bold.ttf)
+    format("truetype");
 }
 
 @font-face {
-font-family: "Montserrat";
-font-weight: 600;
-src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-SemiBold.ttf)
-  format("truetype");
+  font-family: "Montserrat";
+  font-weight: 600;
+  src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-SemiBold.ttf)
+    format("truetype");
 }
 
 @font-face {
-font-family: "Montserrat";
-font-weight: 300;
-src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-Light.ttf)
-  format("truetype");
+  font-family: "Montserrat";
+  font-weight: 300;
+  src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-Light.ttf)
+    format("truetype");
 }
 
 @font-face {
-font-family: "Montserrat";
-font-weight: 200;
-src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-ExtraLight.ttf)
-  format("truetype");
+  font-family: "Montserrat";
+  font-weight: 200;
+  src: url(/CollabGarden/public/assets/font/montserrat/Montserrat-ExtraLight.ttf)
+    format("truetype");
 }
 
 @font-face {
-font-family: "Inter";
-font-weight: 400;
-src: url(/public/assets/font/inter/Inter-Regular.ttf) format("truetype");
+  font-family: "Inter";
+  font-weight: 400;
+  src: url(/public/assets/font/inter/Inter-Regular.ttf) format("truetype");
 }
 
 @font-face {
-font-family: "Inter";
-font-weight: 600;
-src: url(/public/assets/font/inter/Inter-SemiBold.ttf) format("truetype");
+  font-family: "Inter";
+  font-weight: 600;
+  src: url(/public/assets/font/inter/Inter-SemiBold.ttf) format("truetype");
 }
 
 @font-face {
-font-family: "Inter";
-font-weight: 700;
-src: url(/public/assets/font/inter/Inter-Bold.ttf) format("truetype");
+  font-family: "Inter";
+  font-weight: 700;
+  src: url(/public/assets/font/inter/Inter-Bold.ttf) format("truetype");
 }
 
 /* Hero */
 #hero p {
-font-family: "Inter";
-font-weight: 400;
-font-size: 1rem;
-width: 45%;
-/* background-color: rgba(255, 255, 255, 0.498); */
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 1rem;
+  width: 45%;
+  /* background-color: rgba(255, 255, 255, 0.498); */
 }
 
 .bg-hero-image {
-background-image: url(/public/assets/img/hero.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center center;
-height: 30vh;
+  background-image: url(/public/assets/img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 30vh;
 }
 
 /* Buttons */
 .btn-mobile-home {
-background-image: linear-gradient(
-  to right top,
-  #8aa59a,
-  #8aaa9d,
-  #8aafa0,
-  #89b4a2,
-  #89b9a5
-);
-color: black;
-font-family: "Montserrat" ,sans-serif;
-font-weight: 300;
-font-size: 1.2rem;
-width: 30%;
+  background-image: linear-gradient(
+    to right top,
+    #8aa59a,
+    #8aaa9d,
+    #8aafa0,
+    #89b4a2,
+    #89b9a5
+  );
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  width: 30%;
 }
 
 .btn-action:active {
@@ -226,49 +220,48 @@ h5 {
 }
 
 .categories h2 {
-font-family: "Inter";
-font-weight: 700;
-font-size: 1.3rem;
-margin-bottom: 0%;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 0%;
 }
 
 .categories h5 {
-margin-bottom: 0%;
+  margin-bottom: 0%;
 }
 
 /* Cards Home*/
 .card {
-width: 18rem;
+  width: 18rem;
 }
 
 .card-title {
-font-family: "Inter";
-font-weight: 700;
-font-size: 1rem;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 1rem;
 }
 
 .card-img-top {
-height: 55%;
+  height: 55%;
 }
 
 /* Events */
 .bg-event-image {
-background-image: url(/public/assets/img/events.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-height: 60vh;
+  background-image: url(/public/assets/img/events.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
 }
 
 #events p {
-font-family: "Montserrat", sans-serif;
-font-weight: 600;
-font-size: 1.2rem;
-color: white;
-width: 40%;
-background-color: #8aa59ab0;
-padding: 1.5%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: white;
+  width: 40%;
+  background-color: #8aa59ab0;
+  padding: 1.5%;
 }
-
 
 /* Announcement page */
 #announcement .description {
@@ -314,113 +307,113 @@ margin-bottom: 2%;
 }
 
 .navbar-mobile ul {
-list-style: none;
+  list-style: none;
 }
 
 /* Media queries */
 @media ((min-width: 576px) and (orientation: portrait)) {
-.bg-hero-image {
-  height: 45vh;
-}
+  .bg-hero-image {
+    height: 45vh;
+  }
 }
 
 @media ((min-width: 576px) and (orientation: landscape)) {
-.bg-hero-image {
-  height: 50vh;
-}
+  .bg-hero-image {
+    height: 50vh;
+  }
 }
 
 @media (min-width: 768px) {
-:root {
-  font-size: 20px;
-}
-.bg-hero-image {
-  height: 55vh;
-}
-.btn-action {
-  font-weight: 600;
-}
-#hero p {
-  font-size: 1rem;
-  width: 30%;
-}
+  :root {
+    font-size: 20px;
+  }
+  .bg-hero-image {
+    height: 55vh;
+  }
+  .btn-action {
+    font-weight: 600;
+  }
+  #hero p {
+    font-size: 1rem;
+    width: 30%;
+  }
 
-.bg-image {
-  height: 55vh;
-}
+  .bg-image {
+    height: 55vh;
+  }
 
-.footerBg_desktop{
-  background-color: #3B0A01;
-  background-repeat: no-repeat;
-  background-position: auto;
-  background-size: 100% 100%;
-  color: #FFFFFF;
-  margin-top: 5%;
-}
-.footerBg{
-  display: none;
-}
+  .footerBg_desktop {
+    background-color: #3b0a01;
+    background-repeat: no-repeat;
+    background-position: auto;
+    background-size: 100% 100%;
+    color: #ffffff;
+    margin-top: 5%;
+  }
+  .footerBg {
+    display: none;
+  }
 }
 
 @media ((min-width: 992px) and (orientation: portrait)) {
-.bg-event-image {
-  height: 35vh;
-}
+  .bg-event-image {
+    height: 35vh;
+  }
 }
 
 @media (min-width: 992px) {
-:root {
-  font-size: 23px;
+  :root {
+    font-size: 23px;
+  }
+
+  .bg-hero-image {
+    height: 60vh;
+  }
+
+  .categories {
+    margin-top: 5%;
+  }
+
+  #hero p {
+    font-size: 1rem;
+    width: 30%;
+  }
+  .bg-image {
+    height: 60vh;
+  }
+  .icon_socialMedia {
+    width: 55px;
+    margin: 15px;
+  }
+  .announcement-image {
+    width: 25%;
+  }
+
+  .btn-filter {
+    font-size: 0.8rem;
+  }
 }
 
-.bg-hero-image {
-  height: 60vh;
-}
-
-.categories {
-  margin-top: 5%;
-}
-
-#hero p {
-  font-size: 1rem;
-  width: 30%;
-}
-.bg-image {
-  height: 60vh;
-}
-.icon_socialMedia {
-  width:55px;
-  margin: 15px;
-}
-.announcement-image {
-  width: 25%;
-}
-
-.btn-filter {
-  font-size: 0.8rem;
-}
-}
-
-@import url('https://unpkg.com/css.gg@2.0.0/icons/css/add-r.css');
+@import url("https://unpkg.com/css.gg@2.0.0/icons/css/add-r.css");
 
 @media (max-width: 767px) {
-.bg-image {
-  height: 45vh;
-}
-.footerBg{
-  background-color: #3B0A01;
-  background-repeat: no-repeat;
-  background-position: auto;
-  background-size: 100% 100%;
-  color: #FFFFFF;
-}
-.footerBg_desktop{
-  display: none;
-}
-.icon_socialMedia {
-  width:35px;
-  margin: 10px;
-}
+  .bg-image {
+    height: 45vh;
+  }
+  .footerBg {
+    background-color: #3b0a01;
+    background-repeat: no-repeat;
+    background-position: auto;
+    background-size: 100% 100%;
+    color: #ffffff;
+  }
+  .footerBg_desktop {
+    display: none;
+  }
+  .icon_socialMedia {
+    width: 35px;
+    margin: 10px;
+  }
 }
 
 .nav-link {
@@ -444,4 +437,8 @@ list-style: none;
 
 .button_create_desktop {
   width: 3vw;
+}
+
+#map {
+  height: 500px;
 }
