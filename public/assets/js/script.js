@@ -82,8 +82,8 @@ const verifyLocalStorage = (latitude, longitude) => {
   if (localStorage.getItem("userData") !== null) {
     let userDataFromStorage = JSON.parse(localStorage.getItem("userData"));
     if (
-      !userDataFromStorage.lat == latitude.toFixed(2) ||
-      !userDataFromStorage.lat == longitude.toFixed(2)
+      userDataFromStorage.lat != latitude.toFixed(2) ||
+      userDataFromStorage.long != longitude.toFixed(2)
     ) {
       getResults(latitude, longitude);
     } else {

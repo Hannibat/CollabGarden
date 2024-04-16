@@ -1,3 +1,5 @@
+@import url("https://unpkg.com/css.gg@2.0.0/icons/css/add-r.css");
+
 a {
   text-decoration: none;
   color: white;
@@ -121,19 +123,19 @@ a {
 @font-face {
   font-family: "Inter";
   font-weight: 400;
-  src: url(/public/assets/font/inter/Inter-Regular.ttf) format("truetype");
+  src: url(../font/inter/Inter-Regular.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "Inter";
   font-weight: 600;
-  src: url(/public/assets/font/inter/Inter-SemiBold.ttf) format("truetype");
+  src: url(../font/inter/Inter-SemiBold.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "Inter";
   font-weight: 700;
-  src: url(/public/assets/font/inter/Inter-Bold.ttf) format("truetype");
+  src: url(../font/inter/Inter-Bold.ttf) format("truetype");
 }
 
 /* Hero */
@@ -394,7 +396,6 @@ margin-bottom: 2%;
   }
 }
 
-@import url("https://unpkg.com/css.gg@2.0.0/icons/css/add-r.css");
 
 @media (max-width: 767px) {
   .bg-image {
