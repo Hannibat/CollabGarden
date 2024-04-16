@@ -1,3 +1,8 @@
+let map;
+const spinner = document.querySelector(".spinner-border");
+const mapContainer = document.querySelector("#map");
+
+// API - Producteurs
 const getResults = async (latitude, longitude) => {
   const response = await fetch(
     `https://opendata.agencebio.org/api/gouv/operateurs/?q=graines&activite=Production&lat=${latitude}&lng=${longitude}&nb=100`
@@ -5,14 +10,15 @@ const getResults = async (latitude, longitude) => {
   const datas = await response.json();
 
   let localData = {
-    lat: latitude,
-    long: longitude,
+    lat: latitude.toFixed(2),
+    long: longitude.toFixed(2),
     datas: datas,
   };
   localStorage.setItem("userData", JSON.stringify(localData));
-  getGeo(datas, latitude, longitude);
+  getGeoMarkers(datas);
 };
 
+//Détermination de la géolocalisation de l'utilisateur et chargement de la carte
 const findUserGeo = () => {
   const status = document.querySelector("#status");
 
@@ -21,8 +27,17 @@ const findUserGeo = () => {
     const longitude = position.coords.longitude;
 
     status.textContent = "";
+
+    map = L.map("map").setView([latitude, longitude], 13);
+
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19,
+      attribution:
+        '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    }).addTo(map);
+    spinner.classList.add("loading-position");
+    mapContainer.classList.add("opacity-50");
     verifyLocalStorage(latitude, longitude);
-    // getResults(latitude, longitude);
   }
 
   function error() {
@@ -38,15 +53,8 @@ const findUserGeo = () => {
   }
 };
 
-const getGeo = (datas, latitude, longitude) => {
-  let map = L.map("map").setView([latitude, longitude], 13);
-
-  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    maxZoom: 19,
-    attribution:
-      '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-  }).addTo(map);
-
+// Ajouter des marqueurs sur la carte
+const getGeoMarkers = (datas) => {
   let producers = datas.items;
   producers.forEach((producer) => {
     let lat = producer.adressesOperateurs[0].lat;
@@ -55,6 +63,8 @@ const getGeo = (datas, latitude, longitude) => {
     let city = producer.adressesOperateurs[0].ville;
     let postalCode = producer.adressesOperateurs[0].codePostal;
     let marker = L.marker([lat, long]).addTo(map);
+    mapContainer.classList.remove("opacity-50");
+    spinner.classList.remove("loading-position");
     if (producer.siteWebs.length != 0) {
       marker.bindPopup(
         `<b>${producer.denominationcourante}</b><br>${adress}<br>${city} ${postalCode}<br>Site:<a href="${producer.siteWebs[0].url}">Lien</a>`
@@ -67,16 +77,17 @@ const getGeo = (datas, latitude, longitude) => {
   });
 };
 
+// Vérification du stockage local et sauvegarde des données
 const verifyLocalStorage = (latitude, longitude) => {
   if (localStorage.getItem("userData") !== null) {
     let userDataFromStorage = JSON.parse(localStorage.getItem("userData"));
     if (
-      !userDataFromStorage.lat == latitude ||
-      !userDataFromStorage.lat == longitude
+      !userDataFromStorage.lat == latitude.toFixed(2) ||
+      !userDataFromStorage.lat == longitude.toFixed(2)
     ) {
       getResults(latitude, longitude);
     } else {
-      getGeo(userDataFromStorage.datas, latitude, longitude);
+      getGeoMarkers(userDataFromStorage.datas);
     }
   } else {
     getResults(latitude, longitude);

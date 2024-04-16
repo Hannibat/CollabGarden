@@ -422,5 +422,9 @@ h5 {
 }
 
 #map {
-  height: 500px;
+  height: 70vh;
+}
+
+.loading-position {
+  z-index: 9999;
 }
