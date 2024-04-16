@@ -365,7 +365,7 @@ margin-bottom: 2%;
 
 @media (min-width: 992px) {
   :root {
-    font-size: 23px;
+    font-size: 21px;
   }
 
   .bg-hero-image {
@@ -446,4 +446,11 @@ margin-bottom: 2%;
 
 .loading-position {
   z-index: 9999;
+}
+
+.nav-item {
+  font-size: 19px;
+}
+#cat-icon {
+  max-width: 150px;
 }

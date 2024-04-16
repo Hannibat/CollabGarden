@@ -14,24 +14,40 @@
 
 <body>
     <header>
-        <nav class="mobile d-md-none mb-3">
+
+        <!-- Fin header -->
+        <nav class="mobile d-md-none">
             <div class="container d-flex justify-content-between">
-                <div class="col-6">
-                    <a href="index.html"><img src="./public/assets/img/CollabGarden.svg" alt="logo collabgarden" class="logo"></a>
+                <div class="col-6"><a href="index.html"><img src="./public/assets/img/CollabGarden.svg"
+                            alt="logo collabgarden" class="logo"></a>
                 </div>
                 <div class="col-6">
-                    <img src="./public/assets/img/profil/granny.png" alt="photo de profil" class="p_profil" />
-                </div>
+                    <img src="./public/assets/img/profil/granny.png" alt="photo de profil"
+                        class="p_profil">
+                    </div>
+            </div>
+
+            <div class="container input-group my-3">
+                <input type="text" class="form-control" placeholder="Recherche" aria-label="Recherche"
+                    aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg>
+                </span>
             </div>
         </nav>
 
         <!-- Version tablet-->
-        <nav class="tablet navbar navbar-expand justify-content-center d-none d-md-block d-lg-none">
+        <nav class="tablet navbar navbar-expand justify-content-center d-none d-md-block d-xl-none">
             <div class="container-fluid">
-                <a href="index.html"><img src="./public/assets/img/logo_desktop.png" alt="photo de profil" class="logo_desktop" /></a>
+                <a href="index.html"><img src="./public/assets/img/logo_desktop.png" alt="photo de profil"
+                        class="logo_desktop" /></a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <div class="input-group searchbar_desktop ms-4">
-                        <input type="text" class="form-control" placeholder="Recherche" aria-label="Recherche" />
+                        <input type="text" class="form-control" placeholder="Recherche" aria-label="Recherche">
                         <span class="input-group-text" id="basic-addon2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
                                 class="bi bi-search" viewBox="0 0 16 16">
@@ -46,25 +62,29 @@
                             <a href="announcements.html" class="nav-link" aria-current="page">Annonces</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Conseils & Jardin</a>
+                            <a class="nav-link">Conseils</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link">Évènements</a>
                         </li>
                     </ul>
-                    <a href="form.html" class="btn btn-action ms-auto me-4 text-white"><i class="gg-add-r"></i></a>
-                    <img src="./public/assets/img/profil/granny.png" alt="photo de profil" class="p_profil_desktop" />
+                    <a href="form.html" class="btn buttonNavbar_desktop ms-auto me-4 text-white d-md-none"><i
+                            class="gg-add-r"></i></a>
+                    
                 </div>
+                <img src="./public/assets/img/profil/granny.png" alt="photo de profil" class="p_profil_desktop ">
             </div>
         </nav>
 
         <!-- Version desktop -->
-        <nav class="desktop navbar navbar-expand d-flex justify-content-center d-none d-lg-block">
+        <nav class="desktop navbar navbar-expand d-flex justify-content-center d-none d-xl-block">
             <div class="container-fluid">
-                <a href="index.html"><img src="./public/assets/img/logo_desktop.png" alt="photo de profil" class="logo_desktop" /></a>                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <a href="index.html"><img src="./public/assets/img/logo_desktop.png" alt="photo de profil"
+                        class="logo_desktop" /></a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <div class="input-group searchbar_desktop ms-4">
                         <input type="text" class="form-control" placeholder="Recherche" aria-label="Recherche"
-                            aria-describedby="basic-addon2" />
+                            aria-describedby="basic-addon2">
                         <span class="input-group-text" id="basic-addon2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
                                 class="bi bi-search" viewBox="0 0 16 16">
@@ -79,16 +99,16 @@
                             <a href="announcements.html" class="nav-link" aria-current="page" href="#">Annonces</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Conseils & Jardin</a>
+                            <a class="nav-link" href="#">Conseils</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Évènements</a>
+                            <a class="nav-link" href="#">Evenements</a>
                         </li>
                     </ul>
-                    <a href="form.html" class="btn btn-action ms-auto me-4 text-decoration-none">Créer une annonce</a>
-                    <img src="./public/assets/img/profil/granny.png" alt="photo de profil d'une personne agée"
-                        class="p_profil_desktop" />
+                    <a href="form.html" class="btn btn-action button Navbar_desktop ms-auto me-4">Créer une annonce</a>
                 </div>
+                <img src="./public/assets/img/profil/granny.png" alt="photo de profil d'une personne agée"
+                class="p_profil_desktop">
             </div>
         </nav>
     </header>

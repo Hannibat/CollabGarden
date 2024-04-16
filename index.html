@@ -19,7 +19,8 @@
         <!-- Fin header -->
         <nav class="mobile d-md-none">
             <div class="container d-flex justify-content-between">
-                <div class="col-6"><a href="index.html"><img src="./public/assets/img/CollabGarden.svg" alt="logo collabgarden" class="logo"></a>
+                <div class="col-6"><a href="index.html"><img src="./public/assets/img/CollabGarden.svg"
+                            alt="logo collabgarden" class="logo"></a>
                 </div>
                 <div class="col-6"><img src="./public/assets/img/profil/granny.png" alt="photo de profil"
                         class="p_profil"></div>
@@ -39,9 +40,11 @@
         </nav>
 
         <!-- Version tablet-->
-        <nav class="tablet navbar navbar-expand justify-content-center d-none d-md-block d-lg-none">
+        <nav class="tablet navbar navbar-expand justify-content-center d-none d-md-block d-xl-none">
             <div class="container-fluid">
-                <a href="index.html"><img src="./public/assets/img/logo_desktop.png" alt="photo de profil" class="logo_desktop" /></a>                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <a href="index.html"><img src="./public/assets/img/logo_desktop.png" alt="photo de profil"
+                        class="logo_desktop" /></a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <div class="input-group searchbar_desktop ms-4">
                         <input type="text" class="form-control" placeholder="Recherche" aria-label="Recherche">
                         <span class="input-group-text" id="basic-addon2">
@@ -58,22 +61,26 @@
                             <a href="announcements.html" class="nav-link" aria-current="page">Annonces</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Conseils & Jardin</a>
+                            <a class="nav-link">Conseils</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link">Évènements</a>
                         </li>
                     </ul>
-                    <a href="form.html" class="btn buttonNavbar_desktop ms-auto me-4 text-white"><i class="gg-add-r"></i></a>
-                    <img src="./public/assets/img/profil/granny.png" alt="photo de profil" class="p_profil_desktop ">
+                    <a href="form.html" class="btn buttonNavbar_desktop ms-auto me-4 text-white d-md-none"><i
+                            class="gg-add-r"></i></a>
+                    
                 </div>
+                <img src="./public/assets/img/profil/granny.png" alt="photo de profil" class="p_profil_desktop ">
             </div>
         </nav>
 
         <!-- Version desktop -->
-        <nav class="desktop navbar navbar-expand d-flex justify-content-center d-none d-lg-block">
+        <nav class="desktop navbar navbar-expand d-flex justify-content-center d-none d-xl-block">
             <div class="container-fluid">
-                <a href="index.html"><img src="./public/assets/img/logo_desktop.png" alt="photo de profil" class="logo_desktop" /></a>                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <a href="index.html"><img src="./public/assets/img/logo_desktop.png" alt="photo de profil"
+                        class="logo_desktop" /></a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <div class="input-group searchbar_desktop ms-4">
                         <input type="text" class="form-control" placeholder="Recherche" aria-label="Recherche"
                             aria-describedby="basic-addon2">
@@ -91,17 +98,16 @@
                             <a href="announcements.html" class="nav-link" aria-current="page" href="#">Annonces</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Conseils & Jardin</a>
+                            <a class="nav-link" href="#">Conseils</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Evenements</a>
                         </li>
                     </ul>
-                    <a href="form.html" class="btn btn-action buttonNavbar_desktop ms-auto me-4">Créer une annonce</a>
-                    <img src="./public/assets/img/profil/granny.png" alt="photo de profil d'une personne agée"
-                        class="p_profil_desktop ">
+                    <a href="form.html" class="btn btn-action button Navbar_desktop ms-auto me-4">Créer une annonce</a>
                 </div>
-
+                <img src="./public/assets/img/profil/granny.png" alt="photo de profil d'une personne agée"
+                class="p_profil_desktop">
             </div>
         </nav>
     </header>
@@ -132,22 +138,22 @@
         </section>
 
         <!-- Groupe de buttons -->
-        <section class="container d-lg-none mt-4">
-            <div class="d-flex justify-content-between">
-                <button class="btn btn-mobile-home d-flex align-items-center justify-content-center py-1"><img
+        <section class="container d-xl-none mt-4">
+            <div class="d-flex justify-content-around">
+                <button id="cat-icon" class="btn btn-mobile-home d-flex align-items-center justify-content-center py-1"><img
                         src="./public/assets/img/icon-seeds.png" class="w-25 pe-1" alt="" />
                     <p class="m-0">Graines</p>
                 </button>
-                <button class="btn btn-mobile-home d-flex align-items-center justify-content-center py-1"><img
+                <button id="cat-icon" class="btn btn-mobile-home d-flex align-items-center justify-content-center py-1"><img
                         src="./public/assets/img/icon-plant.png" class="w-25 pe-1" alt="">
                     <p class="m-0">Plantes</p>
                 </button>
-                <button class="btn btn-mobile-home d-flex align-items-center justify-content-center py-1"><img
+                <button id="cat-icon" class="btn btn-mobile-home d-flex align-items-center justify-content-center py-1"><img
                         src="./public/assets/img/icon-tree.png" class="w-25 pe-1" alt="">
                     <p class="m-0">Arbres</p>
                 </button>
             </div>
-            <div class="d-flex justify-content-center mt-3 mb-3">
+            <div class="d-flex justify-content-center mt-3">
                 <button class="btn btn-action"><a href="form.html">CREER UNE ANNONCE</a></button>
             </div>
         </section>
@@ -367,18 +373,22 @@
             class="navbar navbar-mobile d-md-none bg-white sticky-bottom rounded-4 p-0 mb-10 mx-0 border border-secondary-subtle">
             <div class="container justify-content-center">
                 <ul class="list d-flex flex-nowrap p-0 m-0 ">
-                    <a href="index.html"><li class="navbar-brand d-flex flex-row mx-2">
-                        <div class="flex-row text-center p-0">
-                            <i class="bi bi-house fs-1"></i>
-                            <p>Accueil</p>
-                        </div>
-                    </li></a>
-                    <a href="announcements.html"><li class="navbar-brand d-flex flex-nowrap mx-1">
-                        <div class="flex-row text-center p-0">
-                            <i class="bi bi-card-list fs-1"></i>
-                            <p>Annonces</p>
-                        </div>
-                    </li></a>
+                    <a href="index.html">
+                        <li class="navbar-brand d-flex flex-row mx-2">
+                            <div class="flex-row text-center p-0">
+                                <i class="bi bi-house fs-1"></i>
+                                <p>Accueil</p>
+                            </div>
+                        </li>
+                    </a>
+                    <a href="announcements.html">
+                        <li class="navbar-brand d-flex flex-nowrap mx-1">
+                            <div class="flex-row text-center p-0">
+                                <i class="bi bi-card-list fs-1"></i>
+                                <p>Annonces</p>
+                            </div>
+                        </li>
+                    </a>
                     <li class="navbar-brand d-flex flex-nowrap mx-1">
                         <div class="text-center p-0">
                             <i class="bi bi-lightbulb fs-1"></i>
@@ -417,7 +427,9 @@
                 </div>
 
                 <div class="col-4">
-                    <a href="producteurs.html"><div>Producteurs</div></a>
+                    <a href="producteurs.html">
+                        <div>Producteurs</div>
+                    </a>
                 </div>
 
                 <div class="col-4">
@@ -456,10 +468,14 @@
                     </div>
                 </div>
                 <div class="col-4 mt-4">
-                    <a href="announcements.html"><div>ANNONCES</div></a>
+                    <a href="announcements.html">
+                        <div>ANNONCES</div>
+                    </a>
                     <div>CONSEILS & JARDIN</div>
                     <div>EVENEMENTS</div>
-                    <a href="producteurs.html"><div>PRODUCTEURS</div></a>
+                    <a href="producteurs.html">
+                        <div>PRODUCTEURS</div>
+                    </a>
                     <hr>
                     <p>Politique de confidentialité</p>
                 </div>
@@ -473,4 +489,5 @@
     <script src="https://kit.fontawesome.com/b4f9175766.js" crossorigin="anonymous"></script>
     <script src="/lib/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
