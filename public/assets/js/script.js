@@ -70,7 +70,10 @@ const getGeo = (datas, latitude, longitude) => {
 const verifyLocalStorage = (latitude, longitude) => {
   if (localStorage.getItem("userData") !== null) {
     let userDataFromStorage = JSON.parse(localStorage.getItem("userData"));
-    if (!userDataFromStorage.lat == latitude) {
+    if (
+      !userDataFromStorage.lat == latitude ||
+      !userDataFromStorage.lat == longitude
+    ) {
       getResults(latitude, longitude);
     } else {
       getGeo(userDataFromStorage.datas, latitude, longitude);
