@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./lib/bootstrap-5.3.3-dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/bootstrap-icons.svg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="./public/assets/css/style.css" />
+
+    <title>CollabGarden</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+
+      <!-- Fin header -->
+      <nav class="mobile d-md-none">
+          <div class="container d-flex justify-content-between">
+              <div class="col-6"><img src="./public/assets/img/CollabGarden.svg" alt="logo collabgarden" class="logo">
+              </div>
+              <div class="col-6"><img src="./public/assets/img/profil/granny.png" alt="photo de profil"
+                      class="p_profil"></div>
+          </div>
+
+          <div class="container input-group my-3">
+              <input type="text" class="form-control" placeholder="Recherche" aria-label="Recherche"
+                  aria-describedby="basic-addon2">
+              <span class="input-group-text" id="basic-addon2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-search" viewBox="0 0 16 16">
+                      <path
+                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                  </svg>
+              </span>
+          </div>
+      </nav>
+
+      <!-- Version tablet-->
+      <nav class="tablet navbar navbar-expand justify-content-center d-none d-md-block d-lg-none">
+          <div class="container-fluid">
+              <a href="http://127.0.0.1:5500/index.html"><img src="./public/assets/img/logo_desktop.png" alt="photo de profil" class="logo_desktop" /></a>                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <div class="input-group searchbar_desktop ms-4">
+                      <input type="text" class="form-control" placeholder="Recherche" aria-label="Recherche">
+                      <span class="input-group-text" id="basic-addon2">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                              class="bi bi-search" viewBox="0 0 16 16">
+                              <path
+                                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                          </svg>
+                      </span>
+                  </div>
+
+                  <ul class="navbar-nav ms-2 me-2">
+                      <li class="nav-item">
+                          <a href="http://127.0.0.1:5500/announcements.html" class="nav-link" aria-current="page">Annonces</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link">Conseils & Jardin</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link">Évènements</a>
+                      </li>
+                  </ul>
+                  <a href="http://127.0.0.1:5500/form.html" class="btn buttonNavbar_desktop ms-auto me-4 text-white"><i class="gg-add-r"></i></a>
+                  <img src="./public/assets/img/profil/granny.png" alt="photo de profil" class="p_profil_desktop ">
+              </div>
+          </div>
+      </nav>
+
+      <!-- Version desktop -->
+      <nav class="desktop navbar navbar-expand d-flex justify-content-center d-none d-lg-block">
+          <div class="container-fluid">
+              <a href="http://127.0.0.1:5500/index.html"><img src="./public/assets/img/logo_desktop.png" alt="photo de profil" class="logo_desktop" /></a>                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <div class="input-group searchbar_desktop ms-4">
+                      <input type="text" class="form-control" placeholder="Recherche" aria-label="Recherche"
+                          aria-describedby="basic-addon2">
+                      <span class="input-group-text" id="basic-addon2">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                              class="bi bi-search" viewBox="0 0 16 16">
+                              <path
+                                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                          </svg>
+                      </span>
+                  </div>
+
+                  <ul class="navbar-nav ms-5 me-2">
+                      <li class="nav-item">
+                          <a href="http://127.0.0.1:5500/announcements.html" class="nav-link" aria-current="page" href="#">Annonces</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Conseils & Jardin</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Evenements</a>
+                      </li>
+                  </ul>
+                  <a href="http://127.0.0.1:5500/form.html" class="btn btn-action buttonNavbar_desktop ms-auto me-4">Créer une annonce</a>
+                  <img src="./public/assets/img/profil/granny.png" alt="photo de profil d'une personne agée"
+                      class="p_profil_desktop ">
+              </div>
+
+          </div>
+      </nav>
+  </header>
+
+    <!-- Main -->
+    <main>
+      <section class="map container">
+        <h1 class="mt-4">Producteurs près de chez vous</h1>
+        <div class="row">
+          <div class="col-12">
+            <div
+              id="map"
+              class="d-flex justify-content-center align-items-center rounded-2"
+            >
+              <div class="spinner-border text-success" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p id="status"></p>
+      </section>
+
+      <!-- Navbar mobile -->
+      <nav
+      class="navbar navbar-mobile d-md-none bg-white sticky-bottom rounded-4 p-0 mb-10 mx-0 border border-secondary-subtle">
+      <div class="container justify-content-center">
+          <ul class="list d-flex flex-nowrap p-0 m-0 ">
+              <a href="http://127.0.0.1:5500/index.html"><li class="navbar-brand d-flex flex-row mx-2">
+                  <div class="flex-row text-center p-0">
+                      <i class="bi bi-house fs-1"></i>
+                      <p>Accueil</p>
+                  </div>
+              </li></a>
+              <a href="http://127.0.0.1:5500/announcements.html"><li class="navbar-brand d-flex flex-nowrap mx-1">
+                  <div class="flex-row text-center p-0">
+                      <i class="bi bi-card-list fs-1"></i>
+                      <p>Annonces</p>
+                  </div>
+              </li></a>
+              <li class="navbar-brand d-flex flex-nowrap mx-1">
+                  <div class="text-center p-0">
+                      <i class="bi bi-lightbulb fs-1"></i>
+                      <p>Conseils</p>
+                  </div>
+              </li>
+              <li class="navbar-brand d-flex flex-nowrap mx-2">
+                  <div class="text-center p-0">
+                      <i class="bi bi-megaphone fs-1"></i>
+                      <p>Sorties</p>
+                  </div>
+              </li>
+          </ul>
+      </div>
+  </nav>
+      <!-- Fin main -->
+    </main>
+
+    <footer>
+      <div class="container-fluid footerBg">
+          <div class="row text-center">
+
+              <div class="col-12">
+                  <div class="socialMedia">
+                      <img src="./public/assets/img/socialmedia/socialinsta.png" alt="logo instagram"
+                          class="icon_socialMedia bg_Social">
+                      <img src="./public/assets/img/socialmedia/socialfb.png" alt="logo facebook"
+                          class="icon_socialMedia bg_Social">
+                      <img src="./public/assets/img/socialmedia/x.png" alt="logo x"
+                          class="icon_socialMedia bg_Social">
+                  </div>
+              </div>
+              <div class="col-4">
+                  <div>Contact</div>
+                  <div>Mentions légales</div>
+              </div>
+
+              <div class="col-4">
+                  <a href="http://127.0.0.1:5500/producteurs.html"><div>Producteurs</div></a>
+              </div>
+
+              <div class="col-4">
+                  <div>Politique de confidentialité</div>
+              </div>
+
+              <div class="col-12 mt-3">
+                  <div>Source photos: Pixabay & Unsplash</div>
+                  <div>© CollabGarden</div>
+              </div>
+
+          </div>
+      </div>
+
+
+
+
+      <div class="container-fluid footerBg_desktop">
+          <div class="row text-center">
+
+              <div class="col-4 mt-2">
+                  <p>Contactez nous:</p>
+                  <div>Téléphone: 0621222324</div>
+                  <div>Email: collabgarden@gmail.com</div>
+                  <hr>
+                  <p>Mentions légales</p>
+              </div>
+              <div class="col-4">
+                  <div class="socialMedia">
+                      <img src="./public/assets/img/socialmedia/socialinsta.png" alt="logo instagram"
+                          class="icon_socialMedia bg_Social">
+                      <img src="./public/assets/img/socialmedia/socialfb.png" alt="logo facebook"
+                          class="icon_socialMedia bg_Social">
+                      <img src="./public/assets/img/socialmedia/x.png" alt="logo x"
+                          class="icon_socialMedia bg_Social">
+                  </div>
+              </div>
+              <div class="col-4 mt-4">
+                  <a href="http://127.0.0.1:5500/announcements.html"><div>ANNONCES</div></a>
+                  <div>CONSEILS & JARDIN</div>
+                  <div>EVENEMENTS</div>
+                  <a href="http://127.0.0.1:5500/producteurs.html"><div>PRODUCTEURS</div></a>
+                  <hr>
+                  <p>Politique de confidentialité</p>
+              </div>
+              <div class="col-12">
+                  <div>© CollabGarden</div>
+                  <div>Source photos: Pixabay & Unsplash</div>
+              </div>
+          </div>
+      </div>
+  </footer>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="./public/assets/js/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b4f9175766.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/lib/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
